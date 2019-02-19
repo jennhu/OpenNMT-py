@@ -1,0 +1,9 @@
+# train EN-EN translation network
+data: data/news/news
+save_model: models/news
+global_attention: none
+
+world_size: 2
+gpu_ranks:
+- 0
+- 1

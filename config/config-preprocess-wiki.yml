@@ -1,0 +1,7 @@
+train_src: data/wiki/1M_leipzig/wiki_train.txt
+train_tgt: data/wiki/1M/leipzig/wiki_train.txt
+
+valid_src: data/wiki/1M_leipzig/wiki_val.txt
+valid_tgt: data/wiki/1M_leipzig/wiki_val.txt
+
+save_data: data/wiki/1M_leipzig/wiki

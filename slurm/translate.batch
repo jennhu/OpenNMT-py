@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH --job-name=translate
+#SBATCH --qos=cpl
+#SBATCH --time=1-0    # -- first number is days requested, second number is hours
+#SBATCH -o logs/translate_IARPA.out
+#SBATCH -e logs/translate_IARPA.err
+##SBATCH --gres=gpu:2  #  -- request the number of gpus.
+#SBATCH -c 1          #  -- request number of cores
+#SBATCH --mem=5000    #  -- request memory
+#SBATCH --mail-user=jennhu@mit.edu # -- use this to send an automated email when:
+#SBATCH --mail-type=end            # -- your job completes successfully
+#SBATCH --mail-type=fail           # -- or if your job fails
+
+cd /om/user/jennhu/OpenNMT-py
+source activate neural-nlp
+python translate.py -config config/config-translate-IARPA.yml
+source deactivate
