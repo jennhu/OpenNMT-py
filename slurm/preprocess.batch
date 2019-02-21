@@ -1,12 +1,11 @@
 #!/bin/sh
 #SBATCH --job-name=preprocess
-##SBATCH --qos=cpl
-#SBATCH --time=0-12  # -- first number is days requested, second number is hours
+#SBATCH --qos=cpl
+#SBATCH --time=0-6  # -- first number is days requested, second number is hours
 #SBATCH -o logs/preprocess_news.out
 #SBATCH -e logs/preprocess_news.err
-#SBATCH --gres=gpu:1  #  -- request the number of gpus.
 #SBATCH -c 1                   #  -- request number of cores
-#SBATCH --mem=25000  #  -- request memory
+#SBATCH --mem=12000  #  -- request memory
 #SBATCH --mail-user=jennhu@mit.edu # -- use this to send an automated email when:
 #SBATCH --mail-type=end        # -- your job completes successfully
 #SBATCH --mail-type=fail         # -- or if your job fails

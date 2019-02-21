@@ -1,0 +1,100 @@
+discarding /cm/shared/openmind/anaconda/2.5.0/bin from PATH
+prepending /om2/user/jennhu/conda/envs/neural-nlp/bin to PATH
+[2019-02-20 11:25:20,849 INFO] Extracting features...
+[2019-02-20 11:25:20,891 INFO]  * number of source features: 0.
+[2019-02-20 11:25:20,891 INFO]  * number of target features: 0.
+[2019-02-20 11:25:20,891 INFO] Building `Fields` object...
+[2019-02-20 11:25:20,891 INFO] Building & saving training data...
+[2019-02-20 11:25:20,892 INFO] Reading source and target files: data/news/news.2015.en.shuffled data/news/news.2015.en.shuffled.
+[2019-02-20 11:25:21,474 INFO] Building shard 0.
+[2019-02-20 11:25:43,468 INFO]  * saving 0th train data shard to data/news/news.train.0.pt.
+[2019-02-20 11:26:18,570 INFO] Building shard 1.
+[2019-02-20 11:26:41,767 INFO]  * saving 1th train data shard to data/news/news.train.1.pt.
+[2019-02-20 11:27:17,411 INFO] Building shard 2.
+[2019-02-20 11:27:39,630 INFO]  * saving 2th train data shard to data/news/news.train.2.pt.
+[2019-02-20 11:28:14,668 INFO] Building shard 3.
+[2019-02-20 11:28:38,381 INFO]  * saving 3th train data shard to data/news/news.train.3.pt.
+[2019-02-20 11:29:13,961 INFO] Building shard 4.
+[2019-02-20 11:29:36,139 INFO]  * saving 4th train data shard to data/news/news.train.4.pt.
+[2019-02-20 11:30:10,879 INFO] Building shard 5.
+[2019-02-20 11:30:33,789 INFO]  * saving 5th train data shard to data/news/news.train.5.pt.
+[2019-02-20 11:31:09,187 INFO] Building shard 6.
+[2019-02-20 11:31:31,494 INFO]  * saving 6th train data shard to data/news/news.train.6.pt.
+[2019-02-20 11:32:06,547 INFO] Building shard 7.
+[2019-02-20 11:32:29,254 INFO]  * saving 7th train data shard to data/news/news.train.7.pt.
+[2019-02-20 11:33:03,920 INFO] Building shard 8.
+[2019-02-20 11:33:26,139 INFO]  * saving 8th train data shard to data/news/news.train.8.pt.
+[2019-02-20 11:34:01,349 INFO] Building shard 9.
+[2019-02-20 11:34:24,218 INFO]  * saving 9th train data shard to data/news/news.train.9.pt.
+[2019-02-20 11:34:59,409 INFO] Building shard 10.
+[2019-02-20 11:35:21,547 INFO]  * saving 10th train data shard to data/news/news.train.10.pt.
+[2019-02-20 11:35:56,556 INFO] Building shard 11.
+[2019-02-20 11:36:19,528 INFO]  * saving 11th train data shard to data/news/news.train.11.pt.
+[2019-02-20 11:36:54,599 INFO] Building shard 12.
+[2019-02-20 11:37:16,626 INFO]  * saving 12th train data shard to data/news/news.train.12.pt.
+[2019-02-20 11:37:51,761 INFO] Building shard 13.
+[2019-02-20 11:38:14,905 INFO]  * saving 13th train data shard to data/news/news.train.13.pt.
+[2019-02-20 11:38:50,473 INFO] Building shard 14.
+[2019-02-20 11:39:12,513 INFO]  * saving 14th train data shard to data/news/news.train.14.pt.
+[2019-02-20 11:39:48,255 INFO] Building shard 15.
+[2019-02-20 11:40:13,290 INFO]  * saving 15th train data shard to data/news/news.train.15.pt.
+[2019-02-20 11:40:52,174 INFO] Building shard 16.
+[2019-02-20 11:41:17,059 INFO]  * saving 16th train data shard to data/news/news.train.16.pt.
+[2019-02-20 11:41:54,089 INFO] Building shard 17.
+[2019-02-20 11:42:19,817 INFO]  * saving 17th train data shard to data/news/news.train.17.pt.
+[2019-02-20 11:42:57,562 INFO] Building shard 18.
+[2019-02-20 11:43:21,527 INFO]  * saving 18th train data shard to data/news/news.train.18.pt.
+[2019-02-20 11:43:58,376 INFO] Building shard 19.
+[2019-02-20 11:44:23,208 INFO]  * saving 19th train data shard to data/news/news.train.19.pt.
+[2019-02-20 11:45:00,262 INFO] Building shard 20.
+[2019-02-20 11:45:24,319 INFO]  * saving 20th train data shard to data/news/news.train.20.pt.
+[2019-02-20 11:46:00,992 INFO] Building shard 21.
+[2019-02-20 11:46:25,806 INFO]  * saving 21th train data shard to data/news/news.train.21.pt.
+[2019-02-20 11:47:04,944 INFO] Building shard 22.
+[2019-02-20 11:47:29,199 INFO]  * saving 22th train data shard to data/news/news.train.22.pt.
+[2019-02-20 11:48:06,273 INFO] Building shard 23.
+[2019-02-20 11:48:31,680 INFO]  * saving 23th train data shard to data/news/news.train.23.pt.
+[2019-02-20 11:49:08,572 INFO] Building shard 24.
+[2019-02-20 11:49:32,801 INFO]  * saving 24th train data shard to data/news/news.train.24.pt.
+[2019-02-20 11:50:10,153 INFO] Building shard 25.
+[2019-02-20 11:50:35,063 INFO]  * saving 25th train data shard to data/news/news.train.25.pt.
+[2019-02-20 11:51:11,876 INFO] Building shard 26.
+[2019-02-20 11:51:36,124 INFO]  * saving 26th train data shard to data/news/news.train.26.pt.
+[2019-02-20 11:52:12,982 INFO] Building shard 27.
+[2019-02-20 11:52:19,010 INFO]  * saving 27th train data shard to data/news/news.train.27.pt.
+[2019-02-20 11:52:27,885 INFO] Building & saving validation data...
+[2019-02-20 11:52:27,885 INFO] Reading source and target files: data/news/newstest2013.en data/news/newstest2013.en.
+[2019-02-20 11:52:27,914 INFO] Building shard 0.
+[2019-02-20 11:52:27,949 INFO]  * saving 0th valid data shard to data/news/news.valid.0.pt.
+[2019-02-20 11:52:28,050 INFO] Building & saving vocabulary...
+[2019-02-20 11:52:42,927 INFO]  * reloading data/news/news.train.0.pt.
+[2019-02-20 11:53:15,366 INFO]  * reloading data/news/news.train.1.pt.
+[2019-02-20 11:53:50,475 INFO]  * reloading data/news/news.train.2.pt.
+[2019-02-20 11:54:27,017 INFO]  * reloading data/news/news.train.3.pt.
+[2019-02-20 11:55:04,619 INFO]  * reloading data/news/news.train.4.pt.
+[2019-02-20 11:55:43,451 INFO]  * reloading data/news/news.train.5.pt.
+[2019-02-20 11:56:22,547 INFO]  * reloading data/news/news.train.6.pt.
+[2019-02-20 11:57:01,900 INFO]  * reloading data/news/news.train.7.pt.
+[2019-02-20 11:57:41,426 INFO]  * reloading data/news/news.train.8.pt.
+[2019-02-20 11:58:20,404 INFO]  * reloading data/news/news.train.9.pt.
+[2019-02-20 11:59:00,356 INFO]  * reloading data/news/news.train.10.pt.
+[2019-02-20 11:59:40,896 INFO]  * reloading data/news/news.train.11.pt.
+[2019-02-20 12:00:21,814 INFO]  * reloading data/news/news.train.12.pt.
+[2019-02-20 12:01:03,321 INFO]  * reloading data/news/news.train.13.pt.
+[2019-02-20 12:01:45,521 INFO]  * reloading data/news/news.train.14.pt.
+[2019-02-20 12:02:29,772 INFO]  * reloading data/news/news.train.15.pt.
+[2019-02-20 12:03:13,857 INFO]  * reloading data/news/news.train.16.pt.
+[2019-02-20 12:03:55,019 INFO]  * reloading data/news/news.train.17.pt.
+[2019-02-20 12:04:36,346 INFO]  * reloading data/news/news.train.18.pt.
+[2019-02-20 12:05:17,642 INFO]  * reloading data/news/news.train.19.pt.
+[2019-02-20 12:05:59,442 INFO]  * reloading data/news/news.train.20.pt.
+[2019-02-20 12:06:41,214 INFO]  * reloading data/news/news.train.21.pt.
+[2019-02-20 12:07:25,744 INFO]  * reloading data/news/news.train.22.pt.
+[2019-02-20 12:08:09,696 INFO]  * reloading data/news/news.train.23.pt.
+[2019-02-20 12:08:50,983 INFO]  * reloading data/news/news.train.24.pt.
+[2019-02-20 12:09:33,054 INFO]  * reloading data/news/news.train.25.pt.
+[2019-02-20 12:10:15,075 INFO]  * reloading data/news/news.train.26.pt.
+[2019-02-20 12:10:38,954 INFO]  * reloading data/news/news.train.27.pt.
+[2019-02-20 12:10:54,552 INFO]  * tgt vocab size: 50004.
+[2019-02-20 12:11:06,226 INFO]  * src vocab size: 50002.
+discarding /om2/user/jennhu/conda/envs/neural-nlp/bin from PATH
