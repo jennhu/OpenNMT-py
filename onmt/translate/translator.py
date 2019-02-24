@@ -89,6 +89,11 @@ class Translator(object):
             fields,
             src_reader,
             tgt_reader,
+            # JH 2019-23-02 intervention flags
+            flip_type,
+            flip_target,
+            flip_size,
+            # end JH 2019-23-02
             gpu=-1,
             n_best=1,
             min_length=0,
@@ -121,6 +126,12 @@ class Translator(object):
         self._tgt_bos_idx = self._tgt_vocab.stoi[tgt_field.init_token]
         self._tgt_unk_idx = self._tgt_vocab.stoi[tgt_field.unk_token]
         self._tgt_vocab_len = len(self._tgt_vocab)
+
+        # JH 2019-23-02 intervention flags
+        self.flip_type = flip_type
+        self.flip_target = flip_target
+        self.flip_size = flip_size
+        # end JH 2019-23-02
 
         self._gpu = gpu
         self._use_cuda = gpu > -1
@@ -214,6 +225,11 @@ class Translator(object):
             fields,
             src_reader,
             tgt_reader,
+            # JH 2019-23-02 intervention flags
+            flip_type=opt.flip_type,
+            flip_target=opt.flip_target,
+            flip_size=opt.flip_size,
+            # end JH 2019-23-02
             gpu=opt.gpu,
             n_best=opt.n_best,
             min_length=opt.min_length,
@@ -582,6 +598,48 @@ class Translator(object):
             # or [ tgt_len, batch_size, vocab ] when full sentence
         return log_probs, attn
 
+    def _flip(self, states, inds, flip_type):
+        '''
+        If flip_type == sign, then simply flip the sign of all units.
+        If flip_type == magnitude, then squash high values to 0, and
+        convert zeros to +1 or -1 at random.
+        
+        inds : indices of units to flip
+        '''
+        # get values to flip
+        flip = states[inds]
+        flip_fun = self._flip_magnitude if flip_type == 'magnitude' else lambda x : -x
+        flip = flip.apply_(flip_fun)
+        # TODO: check dim 
+        # https://pytorch.org/docs/stable/tensors.html#torch.Tensor.scatter_
+        flipped_states = states.scatter_(1, inds, flip)
+        return flipped_states
+
+    def _flip_magnitude(self, x):
+        # TODO: decide what the upper/lower bounds should be
+        raise NotImplemented
+
+    def _flip_states(self, states):
+        # see https://pytorch.org/docs/stable/nn.html#torch.nn.RNN
+        output, h_n = states 
+        h_n = h_n.apply_(abs)
+        if self.flip_target == 'network':
+            # TODO: get indices of self.flip_size top units in entire network
+            _, inds = torch.topk(h_n, self.flip_size)
+        elif self.flip_target == 'layer':
+            # get indices of self.flip_size top units in the layer with highest activations
+            # dim of h_n: [num_layers * num_directions, batch_size, hidden_size]
+            h_n_sep_layers = h_n.view(self.model.encoder.num_layers,
+                                      self.model.encoder.num_directions,
+                                      batch_size,
+                                      self.model.encoder.hidden_size)
+            # TODO: find layer with highest (average? maximum?) activations
+            layers = h_n_sep_layers[0]
+            _, inds = torch.topk(layers, self.flip_size)
+        # flip units using self.flip_type
+        flipped_states = self._flip(states, inds, self.flip_type)
+        return flipped_states
+
     def _translate_batch(
             self,
             batch,
@@ -600,6 +658,11 @@ class Translator(object):
 
         # (1) Run the encoder on the src.
         src, enc_states, memory_bank, src_lengths = self._run_encoder(batch)
+
+        if self.flip_type != "none":
+            # TODO: is it okay to overwrite enc_states, or should I save a copy?
+            enc_states = self._flip_states(enc_states)
+
         self.model.decoder.init_state(src, memory_bank, enc_states)
 
         results = {

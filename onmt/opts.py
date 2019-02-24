@@ -536,6 +536,18 @@ def translate_opts(parser):
                    "the log probabilities will be averaged directly. "
                    "Necessary for models whose output layers can assign "
                    "zero probability.")
+    group.add('--flip_type', '-flip_type', choices=['sign', 'magnitude'],
+            help="Flip signs of activations, or change strong "
+                "activations to zeros and change zero activations "
+                "to +1/-1 at random.")
+    group.add('--flip_target', '-flip_target', default='none',
+               choices=['none', 'layer', 'network'],
+               help="If layer, then perform flip_type intervention on "
+                    "flip_size units in the layer with highest activations. "
+                    "If network, then perform flip_type intervention on "
+                    "flip_size strongest units in the entire network. ")
+    group.add('--flip_size', '-flip_size', type=int,
+               help="Number of units to flip.")
 
     group = parser.add_argument_group('Data')
     group.add('--data_type', '-data_type', default="text",
