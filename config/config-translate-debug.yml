@@ -12,7 +12,7 @@ batch_size: 1
 # intervention flags
 flip_type: sign
 flip_target: network
-flip_size: 50
+flip_size: 25
 
 # logging
 report_bleu: true

@@ -1,0 +1,42 @@
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-cc
+ERROR: deactivate-gcc_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-c++
+ERROR: deactivate-gxx_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-addr2line
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-addr2line
+ERROR: activate-binutils_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-cc
+ERROR: activate-gcc_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-c++
+ERROR: activate-gxx_linux-64.sh failed, see above for details
+
+SENT 1: ['A', 'Republican', 'strategy', 'to', 'counter', 'the', 're-election', 'of', 'Obama']
+PRED 1: A Republican helping to assist the interest of
+PRED SCORE: -3.3235
+
+SENT 2: ['Republican', 'leaders', 'justified', 'their', 'policy', 'by', 'the', 'need', 'to', 'combat', 'electoral', 'fraud.']
+PRED 2: Republican leaders acknowledge getting leaders by the people to change.
+PRED SCORE: -5.3436
+
+SENT 3: ['However,', 'the', 'Brennan', 'Centre', 'considers', 'this', 'a', 'myth,', 'stating', 'that', 'electoral', 'fraud', 'is', 'rarer', 'in', 'the', 'United', 'States', 'than', 'the', 'number', 'of', 'people', 'killed', 'by', 'lightning.']
+PRED 3: However, the satirical committee stressed this a <unk> <unk> that even not.
+PRED SCORE: -8.2968
+
+SENT 4: ['Indeed,', 'Republican', 'lawyers', 'identified', 'only', '300', 'cases', 'of', 'electoral', 'fraud', 'in', 'the', 'United', 'States', 'in', 'a', 'decade.']
+PRED 4: Indeed, Republican lawyers women cases such years.
+PRED SCORE: -3.8090
+
+SENT 5: ['One', 'thing', 'is', 'certain:', 'these', 'new', 'provisions', 'will', 'have', 'a', 'negative', 'impact', 'on', 'voter', 'turn-out.']
+PRED 5: One thing is <unk> these information will
+PRED SCORE: -1.0066
+PRED AVG SCORE: -0.4950, PRED PPL: 1.6405
+Total translation time (s): 5.632086
+Average translation time (s): 1.126417
+Tokens per second: 7.812380
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-cc
+ERROR: deactivate-gcc_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-c++
+ERROR: deactivate-gxx_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-addr2line
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details

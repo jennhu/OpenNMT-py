@@ -5,6 +5,7 @@ import codecs
 import os
 import math
 import time
+import random
 from itertools import count
 
 import torch
@@ -598,47 +599,76 @@ class Translator(object):
             # or [ tgt_len, batch_size, vocab ] when full sentence
         return log_probs, attn
 
-    def _flip(self, states, inds, flip_type):
+    def _flip(self, tensor, inds, flip_type):
         '''
-        If flip_type == sign, then simply flip the sign of all units.
-        If flip_type == magnitude, then squash high values to 0, and
-        convert zeros to +1 or -1 at random.
-        
-        inds : indices of units to flip
+        Expects <tensor> to be 1D Tensor.
         '''
-        # get values to flip
-        flip = states[inds]
-        flip_fun = self._flip_magnitude if flip_type == 'magnitude' else lambda x : -x
-        flip = flip.apply_(flip_fun)
-        # TODO: check dim 
-        # https://pytorch.org/docs/stable/tensors.html#torch.Tensor.scatter_
-        flipped_states = states.scatter_(1, inds, flip)
-        return flipped_states
+        if flip_type == 'sign':
+            flip_fn = lambda x : -x
+        else:
+            lower, upper = tensor.min(), tensor.max()
+            flip_fn = lambda x : self._flip_magnitude(x, lower, upper)
 
-    def _flip_magnitude(self, x):
-        # TODO: decide what the upper/lower bounds should be
-        raise NotImplemented
+        flip = tensor[inds]
+        flip = flip.apply_(flip_fn)
+        flipped_tensor = tensor.scatter(0, inds, flip)
+        return flipped_tensor
 
-    def _flip_states(self, states):
-        # see https://pytorch.org/docs/stable/nn.html#torch.nn.RNN
-        output, h_n = states 
-        h_n = h_n.apply_(abs)
+    def _flip_magnitude(self, x, lower, upper, epsilon=0.0001):
+        '''
+        Map values near 0 to values near lower or upper:
+        - If |x| < epsilon, then return a value chosen uniformly from either
+          (lower-epsilon, lower+epsilon) or (upper-epsilon, upper+epsilon).
+        Squash other values towards 0:
+        - If x is very high or very low, squash x near 0 (in magnitude).
+        - If x is far from both endpoints, then keep its magnitude.
+        '''
+        if abs(x) < epsilon:
+            # this will never happen if we only flip top units (high magnitude)
+            r = random.random()
+            center = upper if r > 0.5 else lower
+            return random.uniform(center - epsilon, center + epsilon)
+        else:
+            min_dist = min(abs(upper - x), abs(lower - x))
+            r = random.random()
+            return min_dist if r > 0.5 else -min_dist
+
+    def _flip_states(self, enc_states):
+        output, h_n = enc_states
+        # dim of h_n: [num_layers * num_directions, batch_size, hidden_size]
+        h_n_size = h_n.size()
+
+        # Option 1: get indices of top units in entire network
         if self.flip_target == 'network':
-            # TODO: get indices of self.flip_size top units in entire network
-            _, inds = torch.topk(h_n, self.flip_size)
+            # flatten h_n into 1D tensor
+            h_n_flat = torch.reshape(h_n, (-1,))
+            # get indices of top self.flip_size units (by magnitude)
+            _, inds = torch.topk(h_n_flat.abs(), self.flip_size)
+            # flip original values (not magnitudes)
+            flipped_h_n_flat = self._flip(h_n_flat, inds, self.flip_type)
+            # reshape to original dimensions of h_n
+            flipped_h_n = torch.reshape(flipped_h_n_flat, h_n_size)
+
+        # Option 2: get indices of top units in layer with highest mean activation
         elif self.flip_target == 'layer':
-            # get indices of self.flip_size top units in the layer with highest activations
-            # dim of h_n: [num_layers * num_directions, batch_size, hidden_size]
-            h_n_sep_layers = h_n.view(self.model.encoder.num_layers,
-                                      self.model.encoder.num_directions,
-                                      batch_size,
-                                      self.model.encoder.hidden_size)
-            # TODO: find layer with highest (average? maximum?) activations
-            layers = h_n_sep_layers[0]
-            _, inds = torch.topk(layers, self.flip_size)
-        # flip units using self.flip_type
-        flipped_states = self._flip(states, inds, self.flip_type)
-        return flipped_states
+            # get index of layer with highest mean activation
+            # NOTE: maybe better to look at mean of highest activations
+            means = torch.mean(h_n.abs(), dim=2)
+            layer_ind = torch.argmax(means)
+            # get layer and flatten into 1D tensor
+            layer = torch.reshape(h_n[layer_ind,:,:], (-1,))
+            # get indices of top self.flip_size units (by magnitude)
+            _, inds = torch.topk(layer.abs(), self.flip_size)
+            # flip top units in layer and update
+            flipped_layer = self._flip(layer, inds, self.flip_type)
+            flipped_h_n = h_n
+            flipped_h_n[layer_ind,:,:] = flipped_layer
+
+        # Option 3: leave states untouched
+        else:
+            flipped_h_n = h_n
+
+        return output, flipped_h_n
 
     def _translate_batch(
             self,
@@ -658,11 +688,8 @@ class Translator(object):
 
         # (1) Run the encoder on the src.
         src, enc_states, memory_bank, src_lengths = self._run_encoder(batch)
-
-        if self.flip_type != "none":
-            # TODO: is it okay to overwrite enc_states, or should I save a copy?
-            enc_states = self._flip_states(enc_states)
-
+        # NOTE: is it okay to overwrite enc_states, or should I mske a copy?
+        enc_states = self._flip_states(enc_states)
         self.model.decoder.init_state(src, memory_bank, enc_states)
 
         results = {
