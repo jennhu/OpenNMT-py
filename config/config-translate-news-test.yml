@@ -1,4 +1,4 @@
 # run autoencoder on held-out news sentences
 model: /om/user/jennhu/OpenNMT-py/models/news_step_100000.pt
-src: /om/user/jennhu/OpenNMT-py/data/news/newstest2011.en
-output: data/news/preds/pred-newstest2011.txt
+src: /om/user/jennhu/OpenNMT-py/data/news/raw/newstest2011.en
+output: /om/user/jennhu/OpenNMT-py/data/preds/pred-newstest2011.txt

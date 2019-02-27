@@ -5,7 +5,7 @@ multi-bleu.perl
 \#*#
 .idea
 *.sublime-*
-.DS_Store
+*DS_Store
 data/
 
 # VScode settings

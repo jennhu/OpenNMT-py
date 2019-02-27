@@ -2,10 +2,10 @@
 # Train: English News Crawl articles from 2015
 # Valid: English development set (newstest2013.en)
 
-train_src: data/news/news.2015.en.shuffled
-train_tgt: data/news/news.2015.en.shuffled
+train_src: data/news/news.2015.en.shuffled.tokenized
+train_tgt: data/news/news.2015.en.shuffled.tokenized
 
-valid_src: data/news/newstest2013.en
-valid_tgt: data/news/newstest2013.en
+valid_src: data/news/newstest2013.en.tokenized
+valid_tgt: data/news/newstest2013.en.tokenized
 
 save_data: data/news/news

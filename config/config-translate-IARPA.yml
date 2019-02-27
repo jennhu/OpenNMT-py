@@ -1,4 +1,8 @@
 # run autoencoder on IARPA sentences
 model: /om/user/jennhu/OpenNMT-py/models/news_step_100000.pt
-src: /om/user/jennhu/anti-sentences/annotation/features/keys/key_384sentences_dereferencedpronouns.txt
-output: data/news/preds/pred_IARPA_384sentences_dereferencedpronouns.txt
+# src: /om/user/jennhu/anti-sentences/annotation/features/keys/key_384sentences_dereferencedpronouns.txt
+src: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.tokenized
+tgt: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.tokenized
+output: data/preds/pred_iarpa_tokenized.txt
+
+report_bleu: 'true'

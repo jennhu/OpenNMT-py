@@ -8,1539 +8,2309 @@ ERROR: activate-gxx_linux-64.sh failed, see above for details
 SENT 1: ['An', 'accordion', 'is', 'a', 'portable', 'musical', 'instrument', 'with', 'two', 'keyboards.']
 PRED 1: An <unk> is a burger musical with potato two <unk>
 PRED SCORE: -8.0425
+GOLD 1: An <unk> is a portable musical instrument with two <unk>
+GOLD SCORE: -295.1458
 
 SENT 2: ['One', 'accordion', 'keyboard', 'is', 'used', 'for', 'individual', 'notes,', 'the', 'other', 'for', 'chords.']
 PRED 2: One <unk> keyboard is used for individual the news, other for <unk>
 PRED SCORE: -7.1354
+GOLD 2: One <unk> keyboard is used for individual notes, the other for <unk>
+GOLD SCORE: -319.9374
 
 SENT 3: ['Accordions', 'produce', 'sound', 'with', 'bellows', 'that', 'blow', 'air', 'through', 'reeds.']
 PRED 3: <unk> produce sound with <unk> that lifted air through <unk>
 PRED SCORE: -2.5827
+GOLD 3: <unk> produce sound with <unk> that blow air through <unk>
+GOLD SCORE: -296.7755
 
 SENT 4: ['An', 'accordionist', 'plays', 'both', 'keyboards', 'while', 'opening', 'and', 'closing', 'the', 'bellows.']
 PRED 4: An <unk> plays both <unk> while opening and closing the <unk>
 PRED SCORE: -0.6190
+GOLD 4: An <unk> plays both <unk> while opening and closing the <unk>
+GOLD SCORE: -320.5419
 
 SENT 5: ['An', 'apartment', 'is', 'a', 'self-contained', 'home', 'that', 'is', 'part', 'of', 'a', 'building.']
 PRED 5: An apartment is a <unk> home that is part of a building.
 PRED SCORE: -0.1171
+GOLD 5: An apartment is a <unk> home that is part of a building.
+GOLD SCORE: -338.9730
 
 SENT 6: ['An', 'apartment', 'may', 'have', 'one', 'or', 'more', 'rooms,', 'as', 'well', 'as', 'a', 'kitchen', 'and', 'a', 'bathroom.']
 PRED 6: An apartment may have one or more accessible as well as a kitchen and a bathroom.
 PRED SCORE: -4.9476
+GOLD 6: An apartment may have one or more rooms, as well as a kitchen and a bathroom.
+GOLD SCORE: -386.5797
 
 SENT 7: ['Some', 'apartments', 'are', 'for', 'single', 'people,', 'others', 'for', 'families.']
 PRED 7: Some apartments are for single people, others for families.
 PRED SCORE: -1.3207
+GOLD 7: Some apartments are for single people, others for families.
+GOLD SCORE: -262.4812
 
 SENT 8: ['The', 'apartment', 'building', 'can', 'have', 'a', 'garage,', 'a', 'laundry', 'facility', 'or', 'extra', 'storage', 'space.']
 PRED 8: The apartment building can have a raft a commuter facility or extra battery space.
 PRED SCORE: -9.3953
+GOLD 8: The apartment building can have a garage, a laundry facility or extra storage space.
+GOLD SCORE: -292.4290
 
 SENT 9: ['An', 'apple', 'is', 'a', 'fruit', 'that', 'can', 'be', 'green,', 'red', 'or', 'yellow.']
 PRED 9: An apple is a fruit that can be preserved red or yellow.
 PRED SCORE: -4.8442
+GOLD 9: An apple is a fruit that can be green, red or yellow.
+GOLD SCORE: -303.5584
 
 SENT 10: ['Apples', 'have', 'thin', 'skin,', 'a', 'crisp,', 'sweet', 'pulp', 'and', 'seeds', 'inside.']
 PRED 10: <unk> have thin skin, a sleek brown syrup and wet inside.
-PRED SCORE: -15.7900
+PRED SCORE: -15.7901
+GOLD 10: <unk> have thin skin, a crisp, sweet pulp and seeds inside.
+GOLD SCORE: -271.6967
 
 SENT 11: ['Some', 'very', 'tart', 'apples', 'are', 'used', 'to', 'make', 'cider.']
 PRED 11: Some very stylish costumes are used to make <unk>
 PRED SCORE: -6.0968
+GOLD 11: Some very tart apples are used to make <unk>
+GOLD SCORE: -290.9165
 
 SENT 12: ['Apples', 'can', 'be', 'eaten', 'raw,', 'roasted', 'or', 'baked', 'in', 'pies.']
 PRED 12: <unk> can be eaten lightly grilled or baked in <unk>
 PRED SCORE: -7.1169
+GOLD 12: <unk> can be eaten raw, roasted or baked in <unk>
+GOLD SCORE: -249.7736
 
 SENT 13: ['Arson', 'is', 'the', 'criminal', 'act', 'of', 'burning', 'a', 'building', 'or', 'wildland.']
 PRED 13: <unk> is the criminal act of burning a building or <unk>
 PRED SCORE: -0.6598
+GOLD 13: <unk> is the criminal act of burning a building or <unk>
+GOLD SCORE: -349.8454
 
 SENT 14: ['A', 'fire', 'investigation', 'determines', 'if', 'a', 'fire', 'was', 'caused', 'by', 'accident', 'or', 'arson.']
 PRED 14: A fire investigation prohibits if a fire was caused by accident or <unk>
 PRED SCORE: -3.5615
+GOLD 14: A fire investigation determines if a fire was caused by accident or <unk>
+GOLD SCORE: -394.6914
 
 SENT 15: ['Arson', 'can', 'be', 'done', 'to', 'cause', 'damage', 'to', 'others', 'or', 'collect', 'insurance.']
 PRED 15: <unk> can be done to cause damage to others or collect insurance.
 PRED SCORE: -2.1927
+GOLD 15: <unk> can be done to cause damage to others or collect insurance.
+GOLD SCORE: -307.6394
 
 SENT 16: ['The', 'severity', 'of', 'the', 'arson', 'depends', 'on', 'whether', 'people', 'were', 'harmed.']
 PRED 16: The severity of the accident, depends on whether people were <unk>
 PRED SCORE: -4.4220
+GOLD 16: The severity of the arson depends on whether people were <unk>
+GOLD SCORE: -303.1290
 
 SENT 17: ['An', 'automobile,', 'or', 'car,', 'is', 'a', 'wheeled', 'vehicle', 'for', 'transporting', 'passengers.']
 PRED 17: An <unk> or car, is a solitary vehicle for heroin passengers.
 PRED SCORE: -7.2467
+GOLD 17: An <unk> or car, is a wheeled vehicle for transporting passengers.
+GOLD SCORE: -285.7616
 
 SENT 18: ['A', 'car', 'can', 'be', 'powered', 'by', 'a', 'gasoline', 'or', 'electric', 'engine.']
 PRED 18: A car can be powered by a shipping or electric engine.
 PRED SCORE: -3.3197
+GOLD 18: A car can be powered by a gasoline or electric engine.
+GOLD SCORE: -315.1645
 
 SENT 19: ['The', 'driver', 'steers', 'the', 'car', 'on', 'roads,', 'other', 'passengers', 'just', 'sit.']
 PRED 19: The driver <unk> the car on coastal area ended just <unk>
 PRED SCORE: -3.3839
+GOLD 19: The driver <unk> the car on roads, other passengers just <unk>
+GOLD SCORE: -330.4854
 
 SENT 20: ['Cars', 'vary', 'in', 'size,', 'number', 'of', 'doors', 'and', 'the', 'type', 'of', 'trunk.']
 PRED 20: Cars vary in size, number of doors and the type of <unk>
 PRED SCORE: -2.7429
+GOLD 20: Cars vary in size, number of doors and the type of <unk>
+GOLD SCORE: -339.2857
 
 SENT 21: ['The', 'axe', 'is', 'a', 'tool', 'used', 'to', 'split', 'and', 'cut', 'wood.']
 PRED 21: The weapon is a tool used to split and cut wood.
 PRED SCORE: -6.4549
+GOLD 21: The axe is a tool used to split and cut wood.
+GOLD SCORE: -315.3550
 
 SENT 22: ['The', 'axe', 'usually', 'consists', 'of', 'a', 'head', 'attached', 'to', 'a', 'handle.']
 PRED 22: The thief usually consists of a head attached to a handle.
 PRED SCORE: -5.7949
+GOLD 22: The axe usually consists of a head attached to a handle.
+GOLD SCORE: -294.4305
 
 SENT 23: ['Historically,', 'axe', 'heads', 'were', 'made', 'of', 'stone', 'and', 'then', 'metal.']
 PRED 23: Typically, blunt heads were made of tears and then metal.
 PRED SCORE: -9.8670
+GOLD 23: Historically, axe heads were made of stone and then metal.
+GOLD SCORE: -276.8900
 
 SENT 24: ['Axes', 'are', 'used', 'by', 'woodcutters', 'and', 'firemen', 'entering', 'buildings.']
 PRED 24: <unk> are used by <unk> and <unk> entering buildings.
 PRED SCORE: -0.5867
+GOLD 24: <unk> are used by <unk> and <unk> entering buildings.
+GOLD SCORE: -233.0464
 
 SENT 25: ['A', 'banana', 'is', 'a', 'long', 'fruit', 'that', 'grows', 'in', 'bunchs,', 'with', 'a', 'soft', 'edible', 'inside.']
 PRED 25: A banana is a long taste that grows in <unk> with a soft cord inside.
 PRED SCORE: -7.8734
+GOLD 25: A banana is a long fruit that grows in <unk> with a soft edible inside.
+GOLD SCORE: -410.0891
 
 SENT 26: ['A', 'banana', 'when', 'ripe', 'can', 'be', 'yellow,', 'purple', 'or', 'red', 'and', 'have', 'small', 'brown', 'spots.']
 PRED 26: A banana when it'd can be used, grey or red and it small brown spots.
 PRED SCORE: -15.3689
+GOLD 26: A banana when ripe can be yellow, purple or red and have small brown spots.
+GOLD SCORE: -355.5423
 
 SENT 27: ['The', 'greatest', 'producers', 'are', 'tropical', 'countries,', 'such', 'as', 'India', 'or', 'Ecuador.']
 PRED 27: The greatest producers are notoriously secure such as India or <unk>
-PRED SCORE: -4.6748
+PRED SCORE: -4.6749
+GOLD 27: The greatest producers are tropical countries, such as India or <unk>
+GOLD SCORE: -334.9341
 
 SENT 28: ['Unripe', 'bananas', 'and', 'plantains', 'are', 'staple', 'foods', 'and', 'often', 'cooked', 'like', 'potatoes.']
 PRED 28: <unk> floors and <unk> are beautiful, foods and often filling like potatoes.
 PRED SCORE: -12.3036
+GOLD 28: <unk> bananas and <unk> are staple foods and often cooked like potatoes.
+GOLD SCORE: -315.3619
 
 SENT 29: ['A', 'bed', 'is', 'a', 'piece', 'of', 'furniture', 'used', 'as', 'a', 'place', 'to', 'sleep', 'or', 'have', 'sex', 'in.']
 PRED 29: A bed is a piece of tea used as a place to sleep or have sex in.
 PRED SCORE: -2.3553
+GOLD 29: A bed is a piece of furniture used as a place to sleep or have sex in.
+GOLD SCORE: -456.3760
 
 SENT 30: ['A', 'bed', 'is', 'made', 'of', 'a', 'mattress', 'and', 'a', 'box', 'spring,', 'plus', 'sheets,', 'pillows', 'and', 'covers.']
 PRED 30: A bed is made of a sheep and a box spoon plus 16,000 signatures and 65.
-PRED SCORE: -20.3843
+PRED SCORE: -20.3844
+GOLD 30: A bed is made of a mattress and a box spring, plus sheets, pillows and covers.
+GOLD SCORE: -380.8969
 
 SENT 31: ['In', 'water', 'beds', 'the', 'mattress', 'is', 'filled', 'with', 'water,', 'and', 'in', 'air', 'beds', 'it', 'is', 'filled', 'with', 'air.']
 PRED 31: In water throughout the pool, is filled with water, and on air plants it is filled with air.
 PRED SCORE: -7.1856
+GOLD 31: In water beds the mattress is filled with water, and in air beds it is filled with air.
+GOLD SCORE: -416.5681
 
 SENT 32: ['Another', 'type', 'of', 'bed', 'is', 'the', 'hammock,', 'a', 'fabric', 'sling', 'suspended', 'above', 'the', 'ground.']
 PRED 32: Another type of bed is a <unk> the fabric deck suspended above the ground.
 PRED SCORE: -7.6985
+GOLD 32: Another type of bed is the <unk> a fabric sling suspended above the ground.
+GOLD SCORE: -360.9414
 
 SENT 33: ['A', 'bee', 'is', 'a', 'flying', 'insect,', 'with', 'a', 'black', 'and', 'yellow', 'body', 'and', 'six', 'legs.']
 PRED 33: A tiger is a flying <unk> with a black and yellow body and six legs.
 PRED SCORE: -3.3091
+GOLD 33: A bee is a flying <unk> with a black and yellow body and six legs.
+GOLD SCORE: -395.5736
 
 SENT 34: ['Bees', 'spread', 'pollen', 'between', 'flowers', 'as', 'they', 'collect', 'nectar', 'to', 'make', 'honey.']
 PRED 34: Debris spread slowly, between flowers as they collect <unk> to make <unk>
 PRED SCORE: -10.8351
+GOLD 34: Bees spread pollen between flowers as they collect <unk> to make <unk>
+GOLD SCORE: -368.7125
 
 SENT 35: ['Bees', 'are', 'social', 'insects', 'and', 'live', 'together', 'in', 'a', 'colony', 'located', 'in', 'a', 'hive.']
 PRED 35: Allow are social clinics and live together in a commuter apartment in a <unk>
 PRED SCORE: -11.0417
+GOLD 35: Bees are social insects and live together in a colony located in a <unk>
+GOLD SCORE: -352.6396
 
 SENT 36: ['Many', 'bees', 'have', 'stingers', 'and', 'can', 'attack', 'if', 'they', 'feel', 'threatened.']
 PRED 36: Many whales have <unk> and can attack if they feel threatened.
 PRED SCORE: -2.9037
+GOLD 36: Many bees have <unk> and can attack if they feel threatened.
+GOLD SCORE: -357.2281
 
 SENT 37: ['A', 'bicycle', 'is', 'a', 'vehicle', 'with', 'two', 'wheels', 'and', 'pedals', 'on', 'a', 'frame.']
 PRED 37: A bicycle is a vehicle with two wheels and <unk> on a frame.
 PRED SCORE: -4.7451
+GOLD 37: A bicycle is a vehicle with two wheels and <unk> on a frame.
+GOLD SCORE: -357.4124
 
 SENT 38: ['A', 'bicycle', 'is', 'propelled', 'by', 'the', 'pedalling', 'of', 'a', 'cyclist', 'on', 'the', 'saddle.']
 PRED 38: A motorist is ejected by the <unk> of a cyclist on the <unk>
 PRED SCORE: -6.1970
+GOLD 38: A bicycle is propelled by the <unk> of a cyclist on the <unk>
+GOLD SCORE: -382.3837
 
 SENT 39: ['The', 'bicycle', 'wheels', 'have', 'rubber', 'tires', 'with', 'an', 'inner', 'tube', 'full', 'of', 'air.']
 PRED 39: The rubber clouds have lined by, with an endangered shell full of air.
 PRED SCORE: -15.0029
+GOLD 39: The bicycle wheels have rubber tires with an inner tube full of air.
+GOLD SCORE: -313.5085
 
 SENT 40: ['People', 'use', 'bicycles', 'for', 'transportation,', 'recreation', 'and', 'racing.']
 PRED 40: People use CPR for fetal substances and racing.
 PRED SCORE: -12.5465
+GOLD 40: People use bicycles for transportation, recreation and racing.
+GOLD SCORE: -218.2753
 
 SENT 41: ['A', 'blacksmith', 'creates', 'objects', 'by', 'forging', 'iron', 'or', 'steel.']
 PRED 41: A <unk> creates emotion by eliminating iron or steel.
 PRED SCORE: -10.6363
+GOLD 41: A <unk> creates objects by forging iron or steel.
+GOLD SCORE: -254.0944
 
 SENT 42: ['A', 'blacksmith', 'hammers', 'and', 'bends', 'hot', 'iron', 'on', 'an', 'anvil', 'to', 'change', 'its', 'shape.']
 PRED 42: A <unk> <unk> and dusty hot iron on an <unk> to change its shape.
 PRED SCORE: -6.5349
+GOLD 42: A <unk> <unk> and bends hot iron on an <unk> to change its shape.
+GOLD SCORE: -333.6732
 
 SENT 43: ['Blacksmiths', 'wears', 'a', 'thick', 'apron', 'and', 'handle', 'the', 'metal', 'with', 'tongs.']
 PRED 43: <unk> wears a thick <unk> and handle the metal with <unk>
 PRED SCORE: -2.1845
+GOLD 43: <unk> wears a thick <unk> and handle the metal with <unk>
+GOLD SCORE: -283.7855
 
 SENT 44: ['Blacksmiths', 'make', 'objects', 'like', 'weapons,', 'horse', 'shoes', 'or', 'iron', 'furniture.']
 PRED 44: <unk> make objects like land, pink box or iron furniture.
 PRED SCORE: -11.6598
+GOLD 44: <unk> make objects like weapons, horse shoes or iron furniture.
+GOLD SCORE: -245.1360
 
 SENT 45: ['A', 'blender', 'is', 'a', 'kitchen', 'appliance', 'used', 'to', 'mix', 'ingredients', 'or', 'puree', 'food.']
 PRED 45: A sinkhole is a kitchen camera, used to spin ingredients or <unk> food.
 PRED SCORE: -12.2456
+GOLD 45: A blender is a kitchen appliance used to mix ingredients or <unk> food.
+GOLD SCORE: -346.6832
 
 SENT 46: ['Blenders', 'have', 'a', 'glass', 'or', 'plastic', 'container', 'with', 'a', 'rotating', 'blade', 'in', 'the', 'bottom.']
 PRED 46: <unk> have a glass or plastic container with a person's wallet in the bottom.
 PRED SCORE: -9.6818
+GOLD 46: <unk> have a glass or plastic container with a rotating blade in the bottom.
+GOLD SCORE: -322.6190
 
 SENT 47: ['Blenders', 'are', 'used', 'to', 'make', 'milk', 'shakes', 'and', 'fruit', 'smoothies.']
 PRED 47: <unk> are used to make milk sticks and fruit <unk>
 PRED SCORE: -3.2643
+GOLD 47: <unk> are used to make milk shakes and fruit <unk>
+GOLD SCORE: -285.1226
 
 SENT 48: ['Blenders', 'are', 'also', 'used', 'to', 'make', 'cold', 'alcoholic', 'drinks', 'with', 'crushed', 'ice.']
 PRED 48: <unk> are also used to make cold creatures with warm wooden ice.
 PRED SCORE: -5.0223
+GOLD 48: <unk> are also used to make cold alcoholic drinks with crushed ice.
+GOLD SCORE: -284.0641
 
 SENT 49: ['A', 'boy', 'is', 'a', 'young', 'male', 'child', 'who', 'has', 'not', 'undergone', 'puberty.']
 PRED 49: A boy is a young male child who has not undergone <unk>
 PRED SCORE: -0.6952
+GOLD 49: A boy is a young male child who has not undergone <unk>
+GOLD SCORE: -341.7559
 
 SENT 50: ['The', 'term', 'boy', 'is', 'used', 'to', 'indicate', 'sex', 'distinctions', 'relative', 'to', 'girls.']
 PRED 50: The term boy is used to indicate sex offenders relative to girls.
 PRED SCORE: -5.4283
+GOLD 50: The term boy is used to indicate sex distinctions relative to girls.
+GOLD SCORE: -330.0402
 
 SENT 51: ['Traditionally', 'boys', 'like', 'to', 'play', 'rough', 'games', 'and', 'fight', 'with', 'each', 'other.']
 PRED 51: <unk> boys like to play rough games and fight with each other.
 PRED SCORE: -2.4029
+GOLD 51: <unk> boys like to play rough games and fight with each other.
+GOLD SCORE: -337.5282
 
 SENT 52: ['An', 'adult', 'male', 'behaving', 'immaturely', 'is', 'often', 'referred', 'to', 'as', 'a', 'boy.']
 PRED 52: An adult male slogan <unk> is often referred to as a boy.
 PRED SCORE: -4.3352
+GOLD 52: An adult male behaving <unk> is often referred to as a boy.
+GOLD SCORE: -312.0179
 
 SENT 53: ['Broccoli', 'is', 'a', 'plant', 'in', 'the', 'cabbage', 'family.']
 PRED 53: <unk> is a plant in the waist family.
 PRED SCORE: -4.0225
+GOLD 53: <unk> is a plant in the cabbage family.
+GOLD SCORE: -216.5566
 
 SENT 54: ['Broccoli', 'has', 'a', 'green', 'flower', 'head', 'and', 'a', 'thick,', 'tough', 'stalk.']
 PRED 54: <unk> has a green coat head and a neat tough <unk>
 PRED SCORE: -7.0489
+GOLD 54: <unk> has a green flower head and a thick, tough <unk>
+GOLD SCORE: -327.9567
 
 SENT 55: ['Broccoli', 'is', 'high', 'in', 'vitamins,', 'fiber', 'and', 'other', 'nutrients.']
 PRED 55: <unk> is high in designing directions and other <unk>
 PRED SCORE: -9.6372
+GOLD 55: <unk> is high in vitamins, fiber and other <unk>
+GOLD SCORE: -258.8987
 
 SENT 56: ['Broccoli', 'can', 'be', 'boiled,', 'stir-fried', 'or', 'eaten', 'raw.']
 PRED 56: <unk> can be <unk> <unk> or plain <unk>
 PRED SCORE: -1.7490
+GOLD 56: <unk> can be <unk> <unk> or eaten <unk>
+GOLD SCORE: -205.7623
 
 SENT 57: ['A', 'butterfly', 'is', 'a', 'flying', 'insect', 'with', 'four', 'large', 'wings.']
 PRED 57: A bath is a flying cage with four large wings.
 PRED SCORE: -8.8461
+GOLD 57: A butterfly is a flying insect with four large wings.
+GOLD SCORE: -298.6214
 
 SENT 58: ['The', 'wings', 'of', 'butterflies', 'can', 'be', 'very', 'colorful', 'and', 'patterned.']
 PRED 58: The wings of snow, can be very stylish and <unk>
 PRED SCORE: -9.7669
+GOLD 58: The wings of butterflies can be very colorful and <unk>
+GOLD SCORE: -297.0166
 
 SENT 59: ['Metamorphosis', 'is', 'the', 'transformation', 'of', 'a', 'caterpillar', 'into', 'a', 'butterfly.']
 PRED 59: <unk> is the transformation of a <unk> into a <unk>
 PRED SCORE: -1.0678
+GOLD 59: <unk> is the transformation of a <unk> into a <unk>
+GOLD SCORE: -298.7158
 
 SENT 60: ['Some', 'people', 'collect', 'butterflies', 'because', 'of', 'their', 'colorful', 'wings.']
 PRED 60: Some people collect alcohol, because of their vegetarian wings.
 PRED SCORE: -9.8243
+GOLD 60: Some people collect butterflies because of their colorful wings.
+GOLD SCORE: -223.0385
 
 SENT 61: ['A', 'carpenter', 'is', 'an', 'artist', 'or', 'manual', 'laborer', 'who', 'works', 'with', 'wood.']
 PRED 61: A WOMAN is an artist or an <unk> fish with everyday wood.
 PRED SCORE: -14.8294
+GOLD 61: A carpenter is an artist or manual <unk> who works with wood.
+GOLD SCORE: -316.9783
 
 SENT 62: ['Carpenters', 'build', 'and', 'repair', 'houses,', 'furniture,', 'boats', 'and', 'other', 'objects.']
 PRED 62: <unk> build and partially transmitted havoc bound and other objects.
 PRED SCORE: -12.7124
+GOLD 62: <unk> build and repair houses, furniture, boats and other objects.
+GOLD SCORE: -256.2108
 
 SENT 63: ['Carpenters', 'use', 'tools', 'such', 'as', 'hammers,', 'saws,', 'pliers', 'and', 'planes.']
 PRED 63: <unk> use tools such as <unk> <unk> <unk> and planes.
 PRED SCORE: -1.1640
+GOLD 63: <unk> use tools such as <unk> <unk> <unk> and planes.
+GOLD SCORE: -203.6549
 
 SENT 64: ['A', 'luthier', 'is', 'a', 'carpenter', 'that', 'makes', 'and', 'repairs', 'musical', 'instruments.']
 PRED 64: A <unk> is a boon that makes and applied musical instruments.
 PRED SCORE: -10.1591
+GOLD 64: A <unk> is a carpenter that makes and repairs musical instruments.
+GOLD SCORE: -333.2713
 
 SENT 65: ['Cats', 'are', 'small', 'furry', 'animals', 'with', 'four', 'legs', 'and', 'a', 'tail.']
 PRED 65: Cats are small ladies with animals four feet and a handgun.
 PRED SCORE: -6.8382
+GOLD 65: Cats are small furry animals with four legs and a tail.
+GOLD SCORE: -296.6135
 
 SENT 66: ['Cats', 'like', 'to', 'groom', 'themselves', 'by', 'licking', 'their', 'fur.']
 PRED 66: Cats like to greet themselves by snapping their <unk>
 PRED SCORE: -7.8459
+GOLD 66: Cats like to groom themselves by licking their <unk>
+GOLD SCORE: -283.7306
 
 SENT 67: ['Cats', 'can', 'hunt', 'mice', 'or', 'birds,', 'but', 'are', 'often', 'fed', 'by', 'their', 'owners.']
 PRED 67: Cats can hunt bacteria or eat, but are often fed by their owners.
 PRED SCORE: -9.1843
+GOLD 67: Cats can hunt mice or birds, but are often fed by their owners.
+GOLD SCORE: -328.5752
 
 SENT 68: ['The', 'claws', 'of', 'cats', 'are', 'retractable', 'so', 'that', 'they', 'keep', 'sharp.']
 PRED 68: The dough of cats are <unk> so that they keep <unk>
 PRED SCORE: -5.4666
+GOLD 68: The claws of cats are <unk> so that they keep <unk>
+GOLD SCORE: -351.7925
 
 SENT 69: ['A', 'chair', 'is', 'a', 'piece', 'of', 'furniture', 'designed', 'for', 'people', 'to', 'sit', 'on.']
 PRED 69: A chair is a piece of furniture designed for people to sit on.
 PRED SCORE: -2.5366
+GOLD 69: A chair is a piece of furniture designed for people to sit on.
+GOLD SCORE: -346.2238
 
 SENT 70: ['Chairs', 'consist', 'of', 'a', 'seat', 'raised', 'above', 'floor', 'level,', 'supported', 'by', 'legs.']
 PRED 70: <unk> consist of a seat raised above 1,000 pounds supported by legs.
 PRED SCORE: -7.0466
+GOLD 70: <unk> consist of a seat raised above floor level, supported by legs.
+GOLD SCORE: -326.1414
 
 SENT 71: ['Chairs', 'can', 'also', 'have', 'back', 'and', 'arm', 'rests,', 'as', 'well', 'as', 'a', 'cushion.']
 PRED 71: <unk> can also have back and arm <unk> as well as a <unk>
 PRED SCORE: -0.4385
+GOLD 71: <unk> can also have back and arm <unk> as well as a <unk>
+GOLD SCORE: -332.8203
 
 SENT 72: ['Seats', 'are', 'fixed', 'chairs', 'located', 'in', 'vehicles', 'or', 'in', 'places', 'like', 'cinemas.']
 PRED 72: <unk> are fixed annually located in vehicles or in places like <unk>
 PRED SCORE: -3.0829
+GOLD 72: <unk> are fixed chairs located in vehicles or in places like <unk>
+GOLD SCORE: -336.5312
 
 SENT 73: ['A', 'clarinet', 'is', 'a', 'woodwind', 'musical', 'instrument.']
 PRED 73: A <unk> is a <unk> musical instrument.
 PRED SCORE: -3.4934
+GOLD 73: A <unk> is a <unk> musical instrument.
+GOLD SCORE: -224.1070
 
 SENT 74: ['A', 'clarinet', 'is', 'a', 'long', 'black', 'tube', 'with', 'a', 'flare', 'at', 'the', 'bottom.']
 PRED 74: A <unk> is a long black brick with a pistol at the bottom.
 PRED SCORE: -6.5530
+GOLD 74: A <unk> is a long black tube with a flare at the bottom.
+GOLD SCORE: -355.0276
 
 SENT 75: ['The', 'clarinet', 'player', 'chooses', 'notes', 'by', 'pressing', 'keys', 'and', 'holes.']
 PRED 75: The <unk> player hangs notes by avoiding stones and holes.
 PRED SCORE: -11.0686
+GOLD 75: The <unk> player chooses notes by pressing keys and holes.
+GOLD SCORE: -255.7045
 
 SENT 76: ['The', 'clarinet', 'is', 'used', 'both', 'in', 'jazz', 'and', 'classical', 'music.']
 PRED 76: The <unk> is used both in jazz and classical music.
 PRED SCORE: -2.3771
+GOLD 76: The <unk> is used both in jazz and classical music.
+GOLD SCORE: -227.3546
 
 SENT 77: ['A', 'cod', 'is', 'a', 'fish', 'that', 'lives', 'in', 'the', 'colder', 'areas', 'of', 'the', 'Atlantic.']
 PRED 77: A pinch is a fish that lives in the outer areas of the Atlantic.
 PRED SCORE: -6.7969
+GOLD 77: A cod is a fish that lives in the colder areas of the Atlantic.
+GOLD SCORE: -377.9716
 
 SENT 78: ['Cod', 'flesh', 'is', 'white', 'and', 'mild-tasting,', 'and', 'flakes', 'easily', 'when', 'cooked.']
 PRED 78: <unk> laser is white and <unk> and shade easily when <unk>
 PRED SCORE: -8.2252
+GOLD 78: <unk> flesh is white and <unk> and flakes easily when <unk>
+GOLD SCORE: -278.9076
 
 SENT 79: ['Fresh', 'cod', 'is', 'used', 'for', 'fish', 'and', 'chips,', 'salted', 'cod', 'for', 'elaborate', 'dishes.']
 PRED 79: Fresh fats is used for fish and vegetables, fry for specially transmitted dishes.
 PRED SCORE: -25.3337
+GOLD 79: Fresh cod is used for fish and chips, salted cod for elaborate dishes.
+GOLD SCORE: -243.5097
 
 SENT 80: ['Cod', 'has', 'been', 'caught,', 'salted', 'and', 'traded', 'since', 'the', 'time', 'of', 'the', 'Vikings.']
 PRED 80: <unk> has been smart, disciplined and attracted since the time of the <unk>
 PRED SCORE: -9.4206
+GOLD 80: <unk> has been caught, salted and traded since the time of the <unk>
+GOLD SCORE: -337.7219
 
 SENT 81: ['Coffee', 'is', 'made', 'from', 'coffee', 'beans,', 'the', 'seeds', 'of', 'the', 'coffee', 'plant.']
 PRED 81: Coffee is made from coffee juice, the seeds of the coffee plant.
 PRED SCORE: -7.9529
+GOLD 81: Coffee is made from coffee beans, the seeds of the coffee plant.
+GOLD SCORE: -270.1801
 
 SENT 82: ['Coffee', 'is', 'a', 'popular', 'drink', 'in', 'many', 'countries,', 'and', 'usually', 'served', 'hot.']
 PRED 82: Coffee is a popular drink in many countries, and usually served hot.
 PRED SCORE: -1.6838
+GOLD 82: Coffee is a popular drink in many countries, and usually served hot.
+GOLD SCORE: -304.7135
 
 SENT 83: ['Coffee', 'contains', 'a', 'mild', 'drug', 'called', 'caffeine', 'that', 'keeps', 'people', 'awake.']
 PRED 83: Coffee contains a mild drug years indicating that keeps people <unk>
 PRED SCORE: -6.6196
+GOLD 83: Coffee contains a mild drug called caffeine that keeps people <unk>
+GOLD SCORE: -354.1956
 
 SENT 84: ['Coffee', 'is', 'the', "world's", 'seventh-largest', 'legal', 'agricultural', 'export.']
 PRED 84: Coffee is the world's <unk> legal agricultural <unk>
 PRED SCORE: -3.5781
+GOLD 84: Coffee is the world's <unk> legal agricultural <unk>
+GOLD SCORE: -239.3771
 
 SENT 85: ['A', 'desert', 'is', 'a', 'natural', 'environment', 'where', 'almost', 'no', 'rain', 'falls.']
 PRED 85: A desert is a natural environment where almost no rain falls.
 PRED SCORE: -2.9152
+GOLD 85: A desert is a natural environment where almost no rain falls.
+GOLD SCORE: -302.5365
 
 SENT 86: ['Hot', 'deserts', 'are', 'usually', 'filled', 'with', 'sand', 'dunes', 'or', 'rocks.']
 PRED 86: Hot weather, are usually filled with wood lined or rocks.
-PRED SCORE: -9.7037
+PRED SCORE: -9.7036
+GOLD 86: Hot deserts are usually filled with sand dunes or rocks.
+GOLD SCORE: -228.7685
 
 SENT 87: ['Some', 'animals', 'and', 'plants', 'have', 'adapted', 'to', 'live', 'in', 'deserts.']
 PRED 87: Some animals and plants have adapted to live in <unk>
 PRED SCORE: -0.3918
+GOLD 87: Some animals and plants have adapted to live in <unk>
+GOLD SCORE: -311.4114
 
 SENT 88: ['The', 'biggest', 'hot', 'desert', 'is', 'the', 'Sahara', 'in', 'northern', 'Africa.']
 PRED 88: The biggest hot desert is the norm in northern Africa.
 PRED SCORE: -4.4660
+GOLD 88: The biggest hot desert is the Sahara in northern Africa.
+GOLD SCORE: -248.0657
 
 SENT 89: ['A', 'desk', 'is', 'a', 'piece', 'of', 'furniture', 'used', 'for', 'working', 'at,', 'sometimes', 'with', 'a', 'computer.']
 PRED 89: A desk is a piece of tea used for working with skin disease, a computer.
 PRED SCORE: -6.5982
+GOLD 89: A desk is a piece of furniture used for working at, sometimes with a computer.
+GOLD SCORE: -382.6840
 
 SENT 90: ['A', 'desk', 'has', 'a', 'flat', 'surface', 'and', 'can', 'be', 'made', 'of', 'wood,', 'plastic', 'or', 'metal.']
 PRED 90: A desk has a flat surface and can be made of contaminated plastic or metal.
 PRED SCORE: -8.9889
+GOLD 90: A desk has a flat surface and can be made of wood, plastic or metal.
+GOLD SCORE: -371.6985
 
 SENT 91: ['A', 'desk', 'may', 'have', 'drawers', 'to', 'store', 'supplies', 'and', 'papers.']
 PRED 91: A pioneer may have resorted to selling trees and papers.
 PRED SCORE: -7.1003
+GOLD 91: A desk may have drawers to store supplies and papers.
+GOLD SCORE: -292.6867
 
 SENT 92: ['A', 'cubicle', 'consists', 'of', 'a', 'desk', 'surrounded', 'by', 'partitions', 'on', 'three', 'sides.']
 PRED 92: A sinkhole consists of a cellphone surrounded by <unk> on three sides.
 PRED SCORE: -8.7955
+GOLD 92: A cubicle consists of a desk surrounded by <unk> on three sides.
+GOLD SCORE: -313.5502
 
 SENT 93: ['A', 'door', 'is', 'a', 'movable', 'barrier', 'to', 'entrance', 'or', 'exit', 'from', 'an', 'enclosed', 'area.']
 PRED 93: A door is a <unk> barrier to tear or exit from an upscale area.
 PRED SCORE: -6.4619
+GOLD 93: A door is a <unk> barrier to entrance or exit from an enclosed area.
+GOLD SCORE: -377.0770
 
 SENT 94: ['Most', 'doors', 'have', 'locks', 'to', 'control', 'who', 'gets', 'to', 'pass', 'through', 'them.']
 PRED 94: Most doors have shipped to control who gets to pass through them.
 PRED SCORE: -3.2933
+GOLD 94: Most doors have locks to control who gets to pass through them.
+GOLD SCORE: -362.6350
 
 SENT 95: ['Most', 'doors', 'are', 'opened', 'by', 'pushing', 'or', 'pulling', 'a', 'handle', 'after', 'they', 'are', 'unlocked.']
 PRED 95: Most doors are opened by ice or errors a dog after they are <unk>
 PRED SCORE: -5.7796
+GOLD 95: Most doors are opened by pushing or pulling a handle after they are <unk>
+GOLD SCORE: -380.3704
 
 SENT 96: ['Other', 'types', 'of', 'doors', 'can', 'slide', 'or', 'consist', 'of', 'a', 'revolving', 'chamber.']
 PRED 96: Other types of winds can yield an altitude of a custodial chamber.
 PRED SCORE: -8.3962
+GOLD 96: Other types of doors can slide or consist of a revolving chamber.
+GOLD SCORE: -312.0974
 
 SENT 97: ['A', 'dress', 'is', 'a', 'piece', 'of', 'clothing', 'that', 'women', 'sometimes', 'wear.']
 PRED 97: A dress is a piece of clothing that used social pornography.
 PRED SCORE: -3.2286
+GOLD 97: A dress is a piece of clothing that women sometimes wear.
+GOLD SCORE: -344.9640
 
 SENT 98: ['A', 'dress', 'is', 'like', 'a', 'shirt', 'attached', 'to', 'a', 'long,', 'matching', 'skirt.']
 PRED 98: A dress is like a knife attached to a long, matching <unk>
 PRED SCORE: -4.0922
+GOLD 98: A dress is like a shirt attached to a long, matching <unk>
+GOLD SCORE: -322.5750
 
 SENT 99: ['A', 'dress', 'is', 'usually', 'worn', 'at', 'formal', 'occasions,', 'such', 'as', 'a', 'wedding', 'or', 'a', 'dance.']
 PRED 99: A dress is usually worn at formal events, such as a wedding or a dance.
 PRED SCORE: -5.2657
+GOLD 99: A dress is usually worn at formal occasions, such as a wedding or a dance.
+GOLD SCORE: -379.6267
 
 SENT 100: ['It', 'can', 'be', 'hard', 'to', 'climb', 'stairs', 'or', 'ride', 'a', 'bike', 'in', 'a', 'dress.']
 PRED 100: It can be hard to climb outside, or ride a bike in a dress.
 PRED SCORE: -3.3411
+GOLD 100: It can be hard to climb stairs or ride a bike in a dress.
+GOLD SCORE: -362.6034
 
 SENT 101: ['Drunk', 'driving', 'is', 'the', 'act', 'of', 'driving', 'under', 'the', 'effects', 'of', 'alcohol.']
 PRED 101: Ikea driving is the act of driving under the effects of alcohol.
 PRED SCORE: -4.6177
+GOLD 101: Drunk driving is the act of driving under the effects of alcohol.
+GOLD SCORE: -319.1590
 
 SENT 102: ['Drunk', 'driving', 'of', 'any', 'vehicle', 'is', 'a', 'crime', 'in', 'most', 'of', 'the', 'world.']
 PRED 102: Ikea ran of any vehicle is a crime in most of the world.
 PRED SCORE: -4.7387
+GOLD 102: Drunk driving of any vehicle is a crime in most of the world.
+GOLD SCORE: -345.0874
 
 SENT 103: ['Drunk', 'driving', 'plays', 'a', 'role', 'in', 'almost', 'half', 'of', 'all', 'vehicle-related', 'deaths.']
 PRED 103: Tiny driving plays a role in almost half of all <unk> deaths.
-PRED SCORE: -5.0021
+PRED SCORE: -5.0020
+GOLD 103: Drunk driving plays a role in almost half of all <unk> deaths.
+GOLD SCORE: -355.3484
 
 SENT 104: ['Drunk', 'drivers', 'are', 'caught', 'by', 'field', 'sobriety', 'and', 'breathing', 'tests.']
 PRED 104: Profits drivers are caught by field <unk> and breathing tests.
 PRED SCORE: -4.8191
+GOLD 104: Drunk drivers are caught by field <unk> and breathing tests.
+GOLD SCORE: -269.3444
 
 SENT 105: ['A', 'drought', 'is', 'a', 'persistent', 'shortage', 'of', 'the', 'water', 'supply', 'caused', 'by', 'lack', 'of', 'rain.']
 PRED 105: A drought is a persistent shortage of the water supply caused by lack of rain.
 PRED SCORE: -2.1169
+GOLD 105: A drought is a persistent shortage of the water supply caused by lack of rain.
+GOLD SCORE: -371.3619
 
 SENT 106: ['Drought', 'will', 'cause', 'crops', 'and', 'plants', 'to', 'stop', 'growing', 'and', 'die.']
 PRED 106: Buses will cause depression and chemicals to stop growing and die.
 PRED SCORE: -7.8850
+GOLD 106: Drought will cause crops and plants to stop growing and die.
+GOLD SCORE: -309.4387
 
 SENT 107: ['Extreme', 'drought', 'will', 'eventually', 'turn', 'areas', 'into', 'desert', 'and', 'cause', 'famine.']
 PRED 107: Extreme crowds will eventually turn areas into Bangladesh and cause <unk>
 PRED SCORE: -6.5110
+GOLD 107: Extreme drought will eventually turn areas into desert and cause <unk>
+GOLD SCORE: -297.7608
 
 SENT 108: ['Large', 'numbers', 'of', 'people', 'have', 'to', 'migrate', 'away', 'from', 'dust', 'bowls', 'during', 'droughts.']
 PRED 108: Large numbers of people have to pour away from thick clouds during <unk>
 PRED SCORE: -7.7339
+GOLD 108: Large numbers of people have to migrate away from dust bowls during <unk>
+GOLD SCORE: -377.1911
 
 SENT 109: ['Eagles', 'are', 'large', 'birds', 'of', 'prey', 'that', 'hunt', 'during', 'the', 'day', 'and', 'have', 'very', 'good', 'eyesight.']
 PRED 109: Eagles are large walls of whales that hunt during the day and it very good <unk>
 PRED SCORE: -4.6331
+GOLD 109: Eagles are large birds of prey that hunt during the day and have very good <unk>
+GOLD SCORE: -406.1074
 
 SENT 110: ['Eagles', 'have', 'hooked', 'beaks', 'for', 'tearing', 'flesh,', 'strong', 'legs', 'and', 'sharp', 'talons.']
 PRED 110: Eagles have worn <unk> for diving <unk> strong legs and sharp <unk>
 PRED SCORE: -7.3736
+GOLD 110: Eagles have hooked <unk> for tearing <unk> strong legs and sharp <unk>
+GOLD SCORE: -292.1997
 
 SENT 111: ['Eagles', 'live', 'in', 'eyries', 'and', 'some', 'species', 'eat', 'fish', 'and', 'others', 'small', 'mammals.']
 PRED 111: Eagles live in <unk> and some species eat fish and others small <unk>
 PRED SCORE: -3.1535
+GOLD 111: Eagles live in <unk> and some species eat fish and others small <unk>
+GOLD SCORE: -295.7923
 
 SENT 112: ['The', 'bald', 'eagle', 'has', 'a', 'bright', 'white', 'head', 'and', 'is', 'the', 'national', 'bird', 'of', 'the', 'United', 'States.']
 PRED 112: The Trojans flyer has a bright white head and is the national heritage of the United States.
 PRED SCORE: -10.3008
+GOLD 112: The bald eagle has a bright white head and is the national bird of the United States.
+GOLD SCORE: -417.9723
 
 SENT 113: ['Earthquakes', 'shake', 'the', 'ground', 'and', 'can', 'knock', 'down', 'buildings', 'and', 'other', 'structures.']
 PRED 113: <unk> throws the ground and can knock down buildings and other structures.
 PRED SCORE: -4.4997
+GOLD 113: <unk> shake the ground and can knock down buildings and other structures.
+GOLD SCORE: -332.4645
 
 SENT 114: ['The', 'earthquake', 'shaking', 'can', 'also', 'trigger', 'landslides', 'and', 'volcanic', 'activity.']
 PRED 114: The earthquake drops can also trigger measles and insulin activity.
 PRED SCORE: -10.1882
+GOLD 114: The earthquake shaking can also trigger landslides and volcanic activity.
+GOLD SCORE: -252.9720
 
 SENT 115: ['Most', 'earthquakes', 'are', 'caused', 'by', 'the', 'release', 'of', 'energy', 'in', 'the', "Earth's", 'crust.']
 PRED 115: Most factories are caused by the release of energy in the Earth's <unk>
 PRED SCORE: -4.0448
+GOLD 115: Most earthquakes are caused by the release of energy in the Earth's <unk>
+GOLD SCORE: -358.6991
 
 SENT 116: ['An', 'earthquake', 'at', 'sea', 'can', 'displace', 'the', 'seabed', 'and', 'cause', 'a', 'tsunami.']
 PRED 116: An earthquake at sea can withstand the closures and cause a <unk>
 PRED SCORE: -7.5481
+GOLD 116: An earthquake at sea can displace the seabed and cause a <unk>
+GOLD SCORE: -374.3544
 
 SENT 117: ['Elephants', 'are', 'the', 'largest', 'kind', 'of', 'land', 'mammal,', 'weighing', 'several', 'tons.']
 PRED 117: <unk> are the largest kind of land <unk> slow several <unk>
 PRED SCORE: -2.3087
+GOLD 117: <unk> are the largest kind of land <unk> weighing several <unk>
+GOLD SCORE: -339.4717
 
 SENT 118: ['An', 'elephant', 'has', 'a', 'long', 'nose', 'called', 'a', 'trunk,', 'which', 'can', 'grab', 'things', 'or', 'food.']
 PRED 118: An elephant has a long child, called a <unk> which can grab things or food.
 PRED SCORE: -2.7085
+GOLD 118: An elephant has a long nose called a <unk> which can grab things or food.
+GOLD SCORE: -370.7648
 
 SENT 119: ['The', 'elephant', 'has', 'a', 'pair', 'of', 'ivory', 'tusks,', 'for', 'moving', 'objects', 'or', 'digging', 'into', 'trees.']
 PRED 119: The elephant has a pair of steam <unk> for moving shoes or digging into trees.
 PRED SCORE: -9.9298
+GOLD 119: The elephant has a pair of ivory <unk> for moving objects or digging into trees.
+GOLD SCORE: -367.9020
 
 SENT 120: ['The', 'elephant', 'flaps', 'its', 'large', 'ears', 'to', 'cool', 'the', 'blood', 'in', 'them', 'and', 'its', 'body.']
 PRED 120: The elephant <unk> its large object to turn the bottle in them and its body.
 PRED SCORE: -4.8780
+GOLD 120: The elephant <unk> its large ears to cool the blood in them and its body.
+GOLD SCORE: -375.0275
 
 SENT 121: ['The', 'eye', 'is', 'an', 'organ', 'for', 'sensing', 'light', 'and', 'coding', 'it', 'for', 'the', 'visual', 'cortex.']
 PRED 121: The eye is an cure for cigarettes light and as it approaches the visual <unk>
 PRED SCORE: -10.9254
+GOLD 121: The eye is an organ for sensing light and coding it for the visual <unk>
+GOLD SCORE: -398.9883
 
 SENT 122: ['Most', 'animals', 'have', 'complex', 'eyes', 'which', 'can', 'detect', 'color,', 'motion', 'and', 'texture.']
 PRED 122: Most animals have complex eyes which can detect autism motion and texture.
 PRED SCORE: -9.2570
+GOLD 122: Most animals have complex eyes which can detect color, motion and texture.
+GOLD SCORE: -319.4961
 
 SENT 123: ['The', 'fovea', 'is', 'the', 'center', 'of', 'the', 'human', 'eye', 'and', 'the', 'most', 'sensitive', 'part', 'of', 'it.']
 PRED 123: The <unk> is the center of the human eye and the most sensitive part of it.
 PRED SCORE: -0.5446
+GOLD 123: The <unk> is the center of the human eye and the most sensitive part of it.
+GOLD SCORE: -406.7482
 
 SENT 124: ['Insects', 'have', 'compound', 'eyes', 'made', 'up', 'of', 'eye', 'units', 'facing', 'in', 'many', 'directions.']
 PRED 124: <unk> have evolved caught made up of dangerous weapons benefit in many directions.
 PRED SCORE: -6.9612
+GOLD 124: <unk> have compound eyes made up of eye units facing in many directions.
+GOLD SCORE: -358.6195
 
 SENT 125: ['A', 'farm', 'is', 'land', 'used', 'to', 'grow', 'plants', 'or', 'raise', 'animals', 'for', 'food.']
 PRED 125: A farm is mostly used to grow plants or raise animals for food.
 PRED SCORE: -2.7208
+GOLD 125: A farm is land used to grow plants or raise animals for food.
+GOLD SCORE: -337.5783
 
 SENT 126: ['Farmers', 'are', 'the', 'people', 'who', 'run', 'the', 'farm', 'and', 'decide', 'what', 'to', 'produce.']
 PRED 126: Farmers are the people who run the train and decide what to produce.
 PRED SCORE: -2.6636
+GOLD 126: Farmers are the people who run the farm and decide what to produce.
+GOLD SCORE: -331.5877
 
 SENT 127: ['Farms', 'usually', 'have', 'a', 'house', 'for', 'farmers,', 'a', 'silo', 'and', 'a', 'barn.']
 PRED 127: Developers usually have a house for alcohol, a <unk> and a <unk>
 PRED SCORE: -9.7805
+GOLD 127: Farms usually have a house for farmers, a <unk> and a <unk>
+GOLD SCORE: -322.1935
 
 SENT 128: ['A', 'cooperative', 'is', 'a', 'farm', 'where', 'many', 'farmers', 'share', 'the', 'land', 'and', 'equipment.']
 PRED 128: A long-standing is a farm where many farmers share the land and equipment.
 PRED SCORE: -6.6042
+GOLD 128: A cooperative is a farm where many farmers share the land and equipment.
+GOLD SCORE: -366.9462
 
 SENT 129: ['Primates', 'usually', 'have', 'four', 'fingers', 'and', 'a', 'thumb', 'on', 'each', 'hand.']
 PRED 129: <unk> usually have four fingers and a slap on each hand.
 PRED SCORE: -3.8474
+GOLD 129: <unk> usually have four fingers and a thumb on each hand.
+GOLD SCORE: -338.8471
 
 SENT 130: ['Fingers', 'are', 'used', 'for', 'grasping,', 'writing,', 'grooming', 'and', 'other', 'activities.']
 PRED 130: Drones are used for <unk> books, graffiti and other activities.
 PRED SCORE: -10.5189
+GOLD 130: Fingers are used for <unk> writing, grooming and other activities.
+GOLD SCORE: -283.7027
 
 SENT 131: ['The', 'finger', 'tips', 'are', 'sensitive', 'to', 'temperature,', 'pressure', 'and', 'vibration.']
 PRED 131: The nervous tips are sensitive to varying pressure and <unk>
 PRED SCORE: -6.9995
+GOLD 131: The finger tips are sensitive to temperature, pressure and <unk>
+GOLD SCORE: -302.0945
 
 SENT 132: ['The', 'nail', 'protects', 'the', 'tip', 'of', 'the', 'finger', 'and', 'can', 'be', 'grown', 'or', 'decorated.']
 PRED 132: The thin reactions the tip of the finger and can be grown or <unk>
 PRED SCORE: -6.9685
+GOLD 132: The nail protects the tip of the finger and can be grown or <unk>
+GOLD SCORE: -350.4389
 
 SENT 133: ['A', 'flood', 'is', 'an', 'overflow', 'of', 'an', 'expanse', 'of', 'water', 'that', 'submerges', 'inhabited', 'land.']
 PRED 133: A flood is an avalanche of an abundance of water that <unk> charred land.
-PRED SCORE: -9.8992
+PRED SCORE: -9.8991
+GOLD 133: A flood is an overflow of an expanse of water that <unk> inhabited land.
+GOLD SCORE: -394.0981
 
 SENT 134: ['Flood', 'can', 'be', 'caused', 'by', 'heavy', 'rain', 'or', 'rapid', 'snow', 'melt,', 'as', 'well', 'as', 'earthquakes', 'at', 'sea.']
 PRED 134: Ankara can be caused by heavy rain or solar dioxide <unk> as well as spreading at sea.
 PRED SCORE: -12.3800
+GOLD 134: Flood can be caused by heavy rain or rapid snow <unk> as well as earthquakes at sea.
+GOLD SCORE: -372.8653
 
 SENT 135: ['In', 'a', 'flood', 'a', 'river', 'will', 'flow', 'out', 'of', 'its', 'channel', 'or', 'break', 'dams', 'and', 'levees.']
 PRED 135: In a flood a fence will flow out of its stores or break forth and <unk>
 PRED SCORE: -7.0539
+GOLD 135: In a flood a river will flow out of its channel or break dams and <unk>
+GOLD SCORE: -426.2954
 
 SENT 136: ['During', 'a', 'flood', 'people', 'evacuate', 'and', 'the', 'contaminated', 'water', 'causes', 'diseases.']
 PRED 136: During a flood people planted and the plane's water causes diseases.
 PRED SCORE: -6.5267
+GOLD 136: During a flood people evacuate and the contaminated water causes diseases.
+GOLD SCORE: -319.4345
 
 SENT 137: ['A', 'floor', 'is', 'a', 'horizontal', 'surface', 'inside', 'a', 'building,', 'used', 'for', 'walking', 'on.']
 PRED 137: A floor is a shallow surface inside a car, used for walking on.
 PRED SCORE: -4.3701
+GOLD 137: A floor is a horizontal surface inside a building, used for walking on.
+GOLD SCORE: -329.6837
 
 SENT 138: ['Floors', 'may', 'be', 'made', 'of', 'bare', 'concrete,', 'tile,', 'linoleum', 'or', 'wooden', 'floorboards.']
 PRED 138: <unk> may be made of mud control, <unk> <unk> or wooden <unk>
 PRED SCORE: -7.6603
+GOLD 138: <unk> may be made of bare concrete, <unk> <unk> or wooden <unk>
+GOLD SCORE: -298.7050
 
 SENT 139: ['People', 'often', 'put', 'carpets', 'on', 'a', 'floor,', 'for', 'comfort', 'and', 'to', 'dampen', 'noise.']
 PRED 139: People often put tabs on a cliff for comfort and to relax noise.
 PRED SCORE: -10.5519
+GOLD 139: People often put carpets on a floor, for comfort and to dampen noise.
+GOLD SCORE: -324.6531
 
 SENT 140: ['In', 'buildings', 'the', 'floor', 'often', 'has', 'pipes', 'and', 'electrical', 'wiring', 'under', 'it.']
 PRED 140: In buildings the floor often has laser and electrical systems, under it.
 PRED SCORE: -11.2391
+GOLD 140: In buildings the floor often has pipes and electrical wiring under it.
+GOLD SCORE: -325.7913
 
 SENT 141: ['Feet', 'are', 'body', 'parts', 'at', 'the', 'end', 'of', 'a', 'legs.']
 PRED 141: Developers are body parts at the end of a legs.
 PRED SCORE: -4.7545
+GOLD 141: Feet are body parts at the end of a legs.
+GOLD SCORE: -271.2367
 
 SENT 142: ['People', 'use', 'their', 'feet', 'when', 'walking,', 'running', 'or', 'standing', 'straight.']
 PRED 142: People use their feet when any, running or standing straight.
 PRED SCORE: -5.2858
+GOLD 142: People use their feet when walking, running or standing straight.
+GOLD SCORE: -300.1936
 
 SENT 143: ['People', 'also', 'use', 'their', 'feet', 'to', 'kick,', 'in', 'both', 'fighting', 'and', 'sports.']
 PRED 143: People also use their feet to distract in both fighting and sports.
 PRED SCORE: -3.7495
+GOLD 143: People also use their feet to kick, in both fighting and sports.
+GOLD SCORE: -344.0805
 
 SENT 144: ['Many', 'cultures', 'have', 'rules', 'for', 'behavior', 'related', 'to', 'feet.']
 PRED 144: Many youngsters have rules for behavior related to feet.
 PRED SCORE: -5.0048
+GOLD 144: Many cultures have rules for behavior related to feet.
+GOLD SCORE: -259.8704
 
 SENT 145: ['A', 'forest', 'is', 'an', 'area', 'with', 'a', 'high', 'density', 'of', 'trees', 'and', 'canopy', 'cover.']
 PRED 145: A forest is an area with a high dose of trees and communal cover.
 PRED SCORE: -7.7922
+GOLD 145: A forest is an area with a high density of trees and canopy cover.
+GOLD SCORE: -340.4268
 
 SENT 146: ['The', 'type', 'of', 'forest', 'depends', 'on', 'temperature', 'and', 'rainfall', 'in', 'its', 'location.']
 PRED 146: The type of forest depends on temperature and freezing in its location.
 PRED SCORE: -4.3674
+GOLD 146: The type of forest depends on temperature and rainfall in its location.
+GOLD SCORE: -303.0767
 
 SENT 147: ['A', 'forest', 'ecosystem', 'has', 'various', 'types', 'of', 'trees', 'and', 'animals,', 'as', 'well', 'as', 'ground', 'plants.']
 PRED 147: A forest array has various types of trees and animals, as well as ground plants.
 PRED SCORE: -8.5317
+GOLD 147: A forest ecosystem has various types of trees and animals, as well as ground plants.
+GOLD SCORE: -355.9843
 
 SENT 148: ['Deforestation', 'is', 'the', 'cutting', 'down', 'of', 'forests', 'disregarding', 'regeneration.']
 PRED 148: <unk> is the cutting down of agricultural <unk> <unk>
 PRED SCORE: -2.9030
+GOLD 148: <unk> is the cutting down of forests <unk> <unk>
+GOLD SCORE: -232.2383
 
 SENT 149: ['A', 'fork', 'is', 'a', 'tool', 'for', 'eating', 'solid', 'foods,', 'with', 'a', 'handle', 'and', 'several', 'tines.']
 PRED 149: A kit is a tool for eating beef sauce with a person's and several <unk>
 PRED SCORE: -11.0009
+GOLD 149: A fork is a tool for eating solid foods, with a handle and several <unk>
+GOLD SCORE: -395.5249
 
 SENT 150: ['Forks', 'are', 'usually', 'made', 'of', 'metal,', 'or', 'plastic,', 'if', 'disposable.']
 PRED 150: <unk> are usually made of an organic or if <unk>
 PRED SCORE: -6.2544
+GOLD 150: <unk> are usually made of metal, or plastic, if <unk>
+GOLD SCORE: -319.2996
 
 SENT 151: ['Forks', 'are', 'used', 'to', 'lift', 'food', 'to', 'the', 'mouth', 'or', 'to', 'hold', 'food', 'in', 'place', 'while', 'cutting.']
 PRED 151: <unk> are used to lift food to the water, or to hold food in place while <unk>
 PRED SCORE: -1.8119
+GOLD 151: <unk> are used to lift food to the mouth or to hold food in place while <unk>
+GOLD SCORE: -460.5340
 
 SENT 152: ['Forks', 'are', 'used', 'in', 'Western', 'cultures,', 'and', 'there', 'are', 'special', 'kinds', 'for', 'various', 'foods.']
 PRED 152: <unk> are used in Western neighborhoods and there are special animals for various foods.
 PRED SCORE: -6.1892
+GOLD 152: <unk> are used in Western cultures, and there are special kinds for various foods.
+GOLD SCORE: -334.1646
 
 SENT 153: ['A', 'frying', 'pan', 'is', 'a', 'small', 'pan', 'with', 'sloping', 'sides', 'and', 'a', 'handle.']
 PRED 153: A slim pan is a small pan with <unk> bench and a handle.
 PRED SCORE: -7.4358
+GOLD 153: A frying pan is a small pan with <unk> sides and a handle.
+GOLD SCORE: -324.9672
 
 SENT 154: ['A', 'frying', 'pan', 'is', 'used', 'to', 'fry,', 'sear', 'and', 'brown', 'food.']
 PRED 154: A slim pan is used to <unk> <unk> and drink food.
 PRED SCORE: -4.1085
+GOLD 154: A frying pan is used to <unk> <unk> and brown food.
+GOLD SCORE: -246.4049
 
 SENT 155: ['The', 'food', 'is', 'cooked', 'on', 'oil', 'covering', 'the', 'bottom', 'of', 'the', 'frying', 'pan.']
 PRED 155: The food is cooked on oil covering the bottom of the frying pan.
 PRED SCORE: -4.8963
+GOLD 155: The food is cooked on oil covering the bottom of the frying pan.
+GOLD SCORE: -312.0759
 
 SENT 156: ['Frying', 'pans', 'are', 'made', 'of', 'iron', 'or', 'teflon-clad', 'steel.']
 PRED 156: <unk> batteries are made of oil, or <unk> steel.
 PRED SCORE: -7.4469
+GOLD 156: <unk> pans are made of iron or <unk> steel.
+GOLD SCORE: -273.5212
 
 SENT 157: ['A', 'girl', 'is', 'a', 'female', 'human', 'who', 'has', 'not', 'yet', 'reached', 'maturity.']
 PRED 157: A girl is a female human who has not yet reached <unk>
 PRED SCORE: -0.5467
+GOLD 157: A girl is a female human who has not yet reached <unk>
+GOLD SCORE: -355.1003
 
 SENT 158: ['At', 'puberty', 'the', 'body', 'of', 'a', 'girl', 'develops', 'into', 'that', 'of', 'a', 'woman.']
 PRED 158: At worst, the body of a girl affects into that of a woman.
 PRED SCORE: -6.1378
+GOLD 158: At puberty the body of a girl develops into that of a woman.
+GOLD SCORE: -325.7545
 
 SENT 159: ['Girls', 'often', 'like', 'playing', 'with', 'dolls', 'and', 'social', 'games.']
 PRED 159: Girls often like playing with costumes and social games.
 PRED SCORE: -5.3030
+GOLD 159: Girls often like playing with dolls and social games.
+GOLD SCORE: -257.0101
 
 SENT 160: ['Girls', 'sometimes', 'grow', 'long', 'hair', 'and', 'wear', 'dresses', 'and', 'skirts.']
 PRED 160: Girls sometimes grow long hair and wear dresses and <unk>
 PRED SCORE: -3.1027
+GOLD 160: Girls sometimes grow long hair and wear dresses and <unk>
+GOLD SCORE: -246.3402
 
 SENT 161: ['A', 'glove', 'is', 'a', 'piece', 'of', 'clothing', 'that', 'covers', 'the', 'hand', 'and', 'fingers.']
 PRED 161: A motorcyclist is a piece of clothing that covers the hand and fingers.
 PRED SCORE: -5.9269
+GOLD 161: A glove is a piece of clothing that covers the hand and fingers.
+GOLD SCORE: -381.1922
 
 SENT 162: ['Gloves', 'to', 'protect', 'against', 'cold', 'are', 'made', 'of', 'wool', 'or', 'lined', 'waterproof', 'material.']
 PRED 162: <unk> to protect against cold to made of bacon or snow or material.
 PRED SCORE: -7.2034
+GOLD 162: <unk> to protect against cold are made of wool or lined waterproof material.
+GOLD SCORE: -321.3678
 
 SENT 163: ['Disposable', 'rubber', 'or', 'latex', 'gloves', 'are', 'used', 'to', 'shield', 'hands', 'from', 'germs', 'or', 'chemicals.']
 PRED 163: <unk> sticks or flashy bones are used to shield hands from clicking or chemicals.
-PRED SCORE: -19.6688
+PRED SCORE: -19.6689
+GOLD 163: <unk> rubber or latex gloves are used to shield hands from germs or chemicals.
+GOLD SCORE: -334.2651
 
 SENT 164: ['A', 'mitten', 'is', 'a', 'kind', 'of', 'glove', 'where', 'the', 'four', 'fingers', 'are', 'covered', 'together.']
 PRED 164: A <unk> is a kind of building, where the four drops are covered together.
 PRED SCORE: -4.4182
+GOLD 164: A <unk> is a kind of glove where the four fingers are covered together.
+GOLD SCORE: -391.7872
 
 SENT 165: ['A', 'hammer', 'is', 'a', 'tool', 'used', 'to', 'deliver', 'an', 'impact', 'to', 'an', 'object.']
 PRED 165: A tunnel is a tool used to deliver an impact to an object.
 PRED SCORE: -4.3608
+GOLD 165: A hammer is a tool used to deliver an impact to an object.
+GOLD SCORE: -372.9450
 
 SENT 166: ['A', 'hammer', 'is', 'most', 'often', 'used', 'to', 'drive', 'nails', 'into', 'wood.']
 PRED 166: A tunnel is most often used to drive its routine wood.
 PRED SCORE: -8.0296
+GOLD 166: A hammer is most often used to drive nails into wood.
+GOLD SCORE: -315.7900
 
 SENT 167: ['The', 'claw', 'on', 'the', 'head', 'of', 'the', 'hammer', 'can', 'be', 'used', 'to', 'remove', 'nails.']
 PRED 167: The lid on the head of the tunnel can be used to remove <unk>
 PRED SCORE: -6.6874
+GOLD 167: The claw on the head of the hammer can be used to remove <unk>
+GOLD SCORE: -383.2807
 
 SENT 168: ['Hammers', 'vary', 'in', 'the', 'shape', 'of', 'the', 'head', 'and', 'handle', 'length.']
 PRED 168: McAuliffe buys in the shape of the head and handle length.
 PRED SCORE: -9.1063
+GOLD 168: Hammers vary in the shape of the head and handle length.
+GOLD SCORE: -275.8058
 
 SENT 169: ['A', 'hand', 'grenade', 'is', 'an', 'explosive', 'used', 'as', 'a', 'weapon', 'against', 'people.']
 PRED 169: A hand driver, is an isolated problem as a weapon against people.
 PRED SCORE: -4.4005
+GOLD 169: A hand grenade is an explosive used as a weapon against people.
+GOLD SCORE: -310.1765
 
 SENT 170: ['Hand', 'grenades', 'are', 'thrown', 'and', 'timed', 'to', 'explode', 'a', 'bit', 'after', 'that.']
 PRED 170: Hand fragments are thrown and confined to control, a bit after that.
 PRED SCORE: -13.0167
+GOLD 170: Hand grenades are thrown and timed to explode a bit after that.
+GOLD SCORE: -295.1465
 
 SENT 171: ['Grenades', 'can', 'also', 'be', 'fired', 'from', 'rifles', 'or', 'shoulder', 'launchers.']
 PRED 171: <unk> can also be fired from riot or shoulder <unk>
 PRED SCORE: -2.7313
+GOLD 171: <unk> can also be fired from rifles or shoulder <unk>
+GOLD SCORE: -282.6727
 
 SENT 172: ['Tear', 'gas', 'grenades', 'are', 'thrown', 'into', 'the', 'middle', 'of', 'a', 'mob', 'to', 'disperse', 'it.']
 PRED 172: <unk> gas sticks are thrown into the middle of a mob to greet it.
 PRED SCORE: -8.1872
+GOLD 172: <unk> gas grenades are thrown into the middle of a mob to disperse it.
+GOLD SCORE: -359.9917
 
 SENT 173: ['A', 'horse', 'is', 'a', 'large', 'hoofed', 'mammal', 'with', 'four', 'long,', 'muscular', 'legs.']
 PRED 173: A horse is a large <unk> mixing with four fingers torn legs.
 PRED SCORE: -9.8801
+GOLD 173: A horse is a large <unk> mammal with four long, muscular legs.
+GOLD SCORE: -317.8448
 
 SENT 174: ['A', 'horse', 'has', 'a', 'tail', 'and', 'a', 'mane', 'on', 'its', 'neck,', 'and', 'is', 'usually', 'gray', 'or', 'brown.']
 PRED 174: A horse has a collapsed and a <unk> on its forehead and is usually swollen or brown.
 PRED SCORE: -9.9865
+GOLD 174: A horse has a tail and a <unk> on its neck, and is usually gray or brown.
+GOLD SCORE: -402.3500
 
 SENT 175: ['Horses', 'have', 'been', 'used', 'for', 'draft', 'work,', 'travel', 'and', 'entertainment.']
 PRED 175: Discover have been used for draft work, travel and entertainment.
 PRED SCORE: -6.2302
+GOLD 175: Horses have been used for draft work, travel and entertainment.
+GOLD SCORE: -266.2057
 
 SENT 176: ['A', 'human', 'can', 'ride', 'a', 'horse', 'while', 'it', 'walks,', 'trots', 'or', 'gallops.']
 PRED 176: A human can ride a horse while it <unk> <unk> or <unk>
 PRED SCORE: -0.8502
+GOLD 176: A human can ride a horse while it <unk> <unk> or <unk>
+GOLD SCORE: -362.4558
 
 SENT 177: ['People', 'go', 'to', 'hospitals', 'to', 'be', 'healed', 'when', 'they', 'are', 'sick', 'or', 'injured.']
 PRED 177: People go to hospitals to be traced when they are sick or injured.
 PRED SCORE: -3.9768
+GOLD 177: People go to hospitals to be healed when they are sick or injured.
+GOLD SCORE: -345.6989
 
 SENT 178: ['Hospitals', 'are', 'staffed', 'by', 'professional', 'physicians,', 'surgeons,', 'and', 'nurses.']
 PRED 178: Hospitals are transmitted by professional <unk> <unk> and nurses.
 PRED SCORE: -4.8616
+GOLD 178: Hospitals are staffed by professional <unk> <unk> and nurses.
+GOLD SCORE: -242.0600
 
 SENT 179: ['Some', 'patients', 'go', 'to', 'hospitals', 'for', 'specialist', 'diagnosis', 'or', 'therapy,', 'leaving', 'the', 'same', 'day.']
 PRED 179: Some patients go to hospitals for specialist activity or neglect leaving the same day.
 PRED SCORE: -6.9699
+GOLD 179: Some patients go to hospitals for specialist diagnosis or therapy, leaving the same day.
+GOLD SCORE: -378.7111
 
 SENT 180: ['For', 'some', 'operations', 'or', 'treatments', 'patients', 'have', 'to', 'stay', 'at', 'the', 'hospital', 'for', 'several', 'weeks.']
 PRED 180: For some operations or treatments patients have to stay at the hospital for several weeks.
 PRED SCORE: -1.7618
+GOLD 180: For some operations or treatments patients have to stay at the hospital for several weeks.
+GOLD SCORE: -392.3915
 
 SENT 181: ['A', 'house', 'is', 'a', 'permanent', 'building', 'or', 'structure', 'for', 'people', 'or', 'families', 'to', 'live', 'in.']
 PRED 181: A house is a permanent building or structure for people or families to live in.
 PRED SCORE: -2.0607
+GOLD 181: A house is a permanent building or structure for people or families to live in.
+GOLD SCORE: -395.8401
 
 SENT 182: ['A', 'house', 'has', 'a', 'roof', 'and', 'walls', 'to', 'keep', 'out', 'cold', 'and', 'rain,', 'and', 'windows', 'to', 'let', 'light', 'in.']
 PRED 182: A house has a roof and walls to keep bags and cold journeys and windows to let light in.
 PRED SCORE: -10.0550
+GOLD 182: A house has a roof and walls to keep out cold and rain, and windows to let light in.
+GOLD SCORE: -385.8082
 
 SENT 183: ['A', 'house', 'can', 'have', 'rooms', 'for', 'purposes', 'like', 'sleeping,', 'cooking', 'or', 'washing.']
 PRED 183: A house can have rooms for purposes like bars, cooking or <unk>
 PRED SCORE: -11.8933
+GOLD 183: A house can have rooms for purposes like sleeping, cooking or <unk>
+GOLD SCORE: -328.8621
 
 SENT 184: ['Most', 'people', 'leave', 'the', 'house', 'to', 'work', 'and', 'come', 'back', 'at', 'night', 'to', 'eat', 'and', 'sleep.']
 PRED 184: Most people leave the house to work and come back at night to eat and sleep.
 PRED SCORE: -0.1245
+GOLD 184: Most people leave the house to work and come back at night to eat and sleep.
+GOLD SCORE: -394.4610
 
 SENT 185: ['An', 'igloo', 'is', 'a', 'type', 'of', 'shelter', 'made', 'from', 'blocks', 'of', 'snow', 'by', 'Inuit.']
 PRED 185: An <unk> is a type of shelter made from flood of snow by <unk>
 PRED SCORE: -3.6881
+GOLD 185: An <unk> is a type of shelter made from blocks of snow by <unk>
+GOLD SCORE: -426.0392
 
 SENT 186: ['Igloos', 'are', 'built', 'in', 'places', 'where', 'snow', 'covers', 'the', 'land', 'most', 'of', 'the', 'time.']
 PRED 186: <unk> are built in places where snow flows the land most of the time.
 PRED SCORE: -2.8669
+GOLD 186: <unk> are built in places where snow covers the land most of the time.
+GOLD SCORE: -353.1825
 
 SENT 187: ['Igloos', 'are', 'often', 'built', 'in', 'the', 'shape', 'of', 'a', 'dome,', 'with', 'an', 'entrance', 'tunnel.']
 PRED 187: <unk> are often built in the shape of a <unk> with an entrance tunnel.
 PRED SCORE: -1.7791
+GOLD 187: <unk> are often built in the shape of a <unk> with an entrance tunnel.
+GOLD SCORE: -344.4448
 
 SENT 188: ['Air', 'pockets', 'in', 'snow', 'insulate', 'the', 'igloo', 'space,', 'and', 'body', 'heat', 'warms', 'it.']
 PRED 188: Air dust in snow <unk> the <unk> fruits and body heat underneath it.
 PRED SCORE: -9.3263
+GOLD 188: Air pockets in snow <unk> the <unk> space, and body heat warms it.
+GOLD SCORE: -312.8836
 
 SENT 189: ['A', 'knife', 'is', 'a', 'tool', 'with', 'a', 'sharp', 'edge', 'that', 'is', 'used', 'to', 'cut', 'things.']
 PRED 189: A knife is a tool with a sharp sight that is used to cut things.
 PRED SCORE: -3.2957
+GOLD 189: A knife is a tool with a sharp edge that is used to cut things.
+GOLD SCORE: -416.4272
 
 SENT 190: ['Modern', 'knives', 'consist', 'of', 'a', 'handle', 'and', 'a', 'blade,', 'usually', 'made', 'of', 'metal.']
 PRED 190: Modern whales consist of a tiny and a <unk> usually made of metal.
 PRED SCORE: -7.3846
+GOLD 190: Modern knives consist of a handle and a <unk> usually made of metal.
+GOLD SCORE: -350.6030
 
 SENT 191: ['Knives', 'have', 'also', 'been', 'used', 'as', 'weapons', 'and', 'instruments', 'in', 'rituals.']
 PRED 191: <unk> have also been used as weapons and tablets in <unk>
 PRED SCORE: -3.2612
+GOLD 191: <unk> have also been used as weapons and instruments in <unk>
+GOLD SCORE: -304.8907
 
 SENT 192: ['A', 'knife', 'can', 'be', 'used', 'to', 'attack', 'by', 'slashing,', 'stabbing', 'or', 'throwing.']
 PRED 192: A knife can be used to attack by <unk> attacker or <unk>
 PRED SCORE: -2.1324
+GOLD 192: A knife can be used to attack by <unk> stabbing or <unk>
+GOLD SCORE: -345.2806
 
 SENT 193: ['Lentils', 'are', 'the', 'seeds', 'of', 'a', 'plant', 'of', 'the', 'legume', 'family.']
 PRED 193: <unk> are the seeds of a plant of the <unk> family.
 PRED SCORE: -0.1703
+GOLD 193: <unk> are the seeds of a plant of the <unk> family.
+GOLD SCORE: -270.9444
 
 SENT 194: ['Lentils', 'can', 'be', 'red,', 'green,', 'brown,', 'black', 'or', 'yellow.']
 PRED 194: <unk> can be stuffed lightly decorated black or yellow.
 PRED SCORE: -10.3414
+GOLD 194: <unk> can be red, green, brown, black or yellow.
+GOLD SCORE: -233.2467
 
 SENT 195: ['Lentils', 'are', 'commonly', 'used', 'in', 'Indian', 'and', 'Mediterranean', 'cuisines.']
 PRED 195: <unk> are commonly used in Indian and Mediterranean <unk>
 PRED SCORE: -0.3729
+GOLD 195: <unk> are commonly used in Indian and Mediterranean <unk>
+GOLD SCORE: -242.9926
 
 SENT 196: ['Lentils', 'are', 'cooked', 'by', 'boiling', 'and', 'are', 'a', 'great', 'source', 'of', 'protein.']
 PRED 196: <unk> are cooked by dried and are a great source of protein.
 PRED SCORE: -5.3951
+GOLD 196: <unk> are cooked by boiling and are a great source of protein.
+GOLD SCORE: -331.5662
 
 SENT 197: ['Lettuce', 'is', 'a', 'biennial', 'plant', 'often', 'grown', 'in', 'temperate', 'climates', 'as', 'a', 'leaf', 'vegetable.']
 PRED 197: <unk> is a corresponding plant often <unk> in <unk> as importantly, a bacon <unk>
 PRED SCORE: -11.9571
+GOLD 197: <unk> is a biennial plant often grown in <unk> <unk> as a leaf <unk>
+GOLD SCORE: -288.6824
 
 SENT 198: ['Lettuce', 'can', 'be', 'eaten', 'cold', 'and', 'raw,', 'in', 'salads', 'and', 'other', 'dishes,', 'or', 'cooked.']
 PRED 198: <unk> can be eaten cold and lean in and for other flavours or <unk>
 PRED SCORE: -15.5847
+GOLD 198: <unk> can be eaten cold and raw, in salads and other dishes, or <unk>
+GOLD SCORE: -314.8316
 
 SENT 199: ['Lettuce', 'is', 'considered', 'fairly', 'easy', 'to', 'grow', 'and', 'a', 'suitable', 'crop', 'for', 'beginners.']
 PRED 199: <unk> is considered perfectly easy to grow and a suitable sheet for <unk>
 PRED SCORE: -5.2795
+GOLD 199: <unk> is considered fairly easy to grow and a suitable crop for <unk>
+GOLD SCORE: -344.5550
 
 SENT 200: ['Most', 'lettuce', 'leaves', 'taste', 'bitter,', 'but', 'some', 'are', 'bred', 'to', 'remove', 'the', 'bitterness.']
 PRED 200: Most eggs, leaves fruit <unk> but some are transported to remove the <unk>
 PRED SCORE: -8.2485
+GOLD 200: Most lettuce leaves taste <unk> but some are bred to remove the <unk>
+GOLD SCORE: -365.0259
 
 SENT 201: ['A', 'library', 'is', 'a', 'place', 'where', 'a', 'collection', 'of', 'books,', 'documents', 'and', 'media', 'is', 'kept.']
 PRED 201: A library is a place where a collection of books, documents and media is <unk>
 PRED SCORE: -2.5681
+GOLD 201: A library is a place where a collection of books, documents and media is <unk>
+GOLD SCORE: -419.0399
 
 SENT 202: ['Librarians', 'work', 'at', 'libraries', 'and', 'are', 'experts', 'at', 'finding', 'and', 'organizing', 'information.']
 PRED 202: <unk> work at pubs and are experts at finding and pursuing information.
 PRED SCORE: -8.1306
+GOLD 202: <unk> work at libraries and are experts at finding and organizing information.
+GOLD SCORE: -268.1229
 
 SENT 203: ['People', 'can', 'go', 'to', 'public', 'libraries', 'and', 'borrow', 'books', 'to', 'take', 'home', 'for', 'several', 'weeks.']
 PRED 203: People can go to public colleges and borrow books to take home for several weeks.
 PRED SCORE: -6.5682
+GOLD 203: People can go to public libraries and borrow books to take home for several weeks.
+GOLD SCORE: -409.3669
 
 SENT 204: ['Academic', 'libraries', 'support', 'scholarly', 'research', 'and', 'have', 'specialized', 'books.']
 PRED 204: Training chains support Valentine's research and have licensed books.
 PRED SCORE: -17.1397
+GOLD 204: Academic libraries support scholarly research and have specialized books.
+GOLD SCORE: -266.1676
 
 SENT 205: ['A', 'log', 'cabin', 'is', 'a', 'small', 'house', 'built', 'from', 'round', 'logs.']
 PRED 205: A workout spacecraft is a small house built from round <unk>
 PRED SCORE: -6.4822
+GOLD 205: A log cabin is a small house built from round <unk>
+GOLD SCORE: -313.9473
 
 SENT 206: ['Log', 'cabin', 'is', 'a', 'symbol', 'of', 'American', 'frontier', 'life', 'and', 'humble', 'origins.']
 PRED 206: <unk> cabin is a minority of American cities, life and humble <unk>
 PRED SCORE: -8.9816
+GOLD 206: <unk> cabin is a symbol of American frontier life and humble <unk>
+GOLD SCORE: -309.8412
 
 SENT 207: ['Log', 'cabins', 'were', 'used', 'as', 'first', 'shelters', 'by', 'european', 'settlers.']
 PRED 207: <unk> fragments were used as first <unk> by lethal <unk>
 PRED SCORE: -9.9834
+GOLD 207: <unk> cabins were used as first shelters by <unk> <unk>
+GOLD SCORE: -258.3856
 
 SENT 208: ['Log', 'cabins', 'were', 'built', 'using', 'logs', 'with', 'notch', 'joints', 'at', 'the', 'ends.']
 PRED 208: <unk> fragments were built using masks with heavier stones at the ends.
 PRED SCORE: -17.5052
+GOLD 208: <unk> cabins were built using logs with notch joints at the ends.
+GOLD SCORE: -309.1936
 
 SENT 209: ['A', 'man', 'is', 'a', 'male', 'human', 'adult.']
 PRED 209: A man is a male human heritage.
 PRED SCORE: -1.1507
+GOLD 209: A man is a male human adult.
+GOLD SCORE: -209.0540
 
 SENT 210: ['A', 'boy', 'becomes', 'a', 'man', 'after', 'passing', 'through', 'puberty.']
 PRED 210: A boy becomes a man after passing through <unk>
 PRED SCORE: -0.9910
+GOLD 210: A boy becomes a man after passing through <unk>
+GOLD SCORE: -282.2909
 
 SENT 211: ['Manhood', 'is', 'associated', 'with', 'masculinity', 'and', 'virility.']
 PRED 211: <unk> is associated with nausea and <unk>
 PRED SCORE: -5.0060
+GOLD 211: <unk> is associated with masculinity and <unk>
+GOLD SCORE: -206.6811
 
 SENT 212: ['A', 'man', 'differs', 'from', 'a', 'woman', 'in', 'height,', 'weight,', 'and', 'body', 'structure.']
 PRED 212: A man hangs from a woman in handcuffs and feeding body structure.
 PRED SCORE: -10.7761
+GOLD 212: A man differs from a woman in height, weight, and body structure.
+GOLD SCORE: -294.4840
 
 SENT 213: ['Milk', 'is', 'a', 'white', 'liquid', 'produced', 'by', 'female', 'mammals', 'to', 'feed', 'their', 'young.']
 PRED 213: Experience is a white cloud produced by female sellers to feed their young.
 PRED SCORE: -9.7477
+GOLD 213: Milk is a white liquid produced by female mammals to feed their young.
+GOLD SCORE: -358.7509
 
 SENT 214: ['Newborn', 'animals', 'must', 'be', 'fed', 'milk', 'before', 'they', 'can', 'eat', 'solid', 'food.']
 PRED 214: Traditional animals must be fed milk before they can eat solid food.
 PRED SCORE: -8.1090
+GOLD 214: Newborn animals must be fed milk before they can eat solid food.
+GOLD SCORE: -270.0449
 
 SENT 215: ['Dairy', 'products', 'such', 'as', 'cheese', 'and', 'butter', 'are', 'made', 'from', 'milk.']
 PRED 215: Table products such as cheese and butter are made from milk.
 PRED SCORE: -4.2457
+GOLD 215: Dairy products such as cheese and butter are made from milk.
+GOLD SCORE: -260.4893
 
 SENT 216: ['Liquid', 'produced', 'from', 'soybeans', 'and', 'coconuts', 'is', 'sometimes', 'called', 'milk.']
 PRED 216: <unk> produced from <unk> and <unk> is sometimes called milk.
 PRED SCORE: -0.5468
+GOLD 216: <unk> produced from <unk> and <unk> is sometimes called milk.
+GOLD SCORE: -283.7314
 
 SENT 217: ['Mosquitos', 'are', 'thin,', 'small', 'flying', 'insects', 'that', 'emit', 'a', 'high-pitched', 'sound.']
 PRED 217: <unk> are cold, small flying pools that resemble a <unk> sound.
 PRED SCORE: -10.1260
+GOLD 217: <unk> are thin, small flying insects that emit a <unk> sound.
+GOLD SCORE: -305.2525
 
 SENT 218: ['Mosquitos', 'have', 'mouthparts', 'for', 'piercing', 'the', 'skin', 'of', 'plants', 'and', 'animals.']
 PRED 218: <unk> have <unk> for patches of skin the food, and animals.
 PRED SCORE: -3.7432
+GOLD 218: <unk> have <unk> for piercing the skin of plants and animals.
+GOLD SCORE: -288.7381
 
 SENT 219: ['Female', 'mosquitos', 'bite', 'people', 'and', 'animals', 'and', 'suck', 'their', 'blood', 'for', 'protein.']
 PRED 219: Female <unk> bite people and animals and tablets their blood for protein.
 PRED SCORE: -6.7593
+GOLD 219: Female <unk> bite people and animals and suck their blood for protein.
+GOLD SCORE: -286.8511
 
 SENT 220: ['Mosquito', 'bites', 'can', 'spread', 'yellow', 'fever,', 'malaria', 'and', 'other', 'parasite', 'diseases.']
 PRED 220: <unk> stone can spread yellow trees, tablets and other miniature diseases.
 PRED SCORE: -15.4348
+GOLD 220: <unk> bites can spread yellow fever, malaria and other parasite diseases.
+GOLD SCORE: -270.3820
 
 SENT 221: ['A', 'mountain', 'is', 'a', 'landform', 'that', 'rises', 'steeply', 'above', 'surrounding', 'land.']
 PRED 221: A mountain is a <unk> that rises <unk> above surrounding land.
 PRED SCORE: -1.7397
+GOLD 221: A mountain is a <unk> that rises <unk> above surrounding land.
+GOLD SCORE: -319.6589
 
 SENT 222: ['Mountains', 'rise', 'higher', 'than', 'hills', 'and', 'sometimes', 'have', 'snow', 'at', 'the', 'top.']
 PRED 222: Steel rise higher than rivers and sometimes have snow at the top.
 PRED SCORE: -8.2937
+GOLD 222: Mountains rise higher than hills and sometimes have snow at the top.
+GOLD SCORE: -317.2137
 
 SENT 223: ['A', 'range', 'of', 'mountains', 'forms', 'due', 'to', 'tectonic', 'plate', 'collision.']
 PRED 223: A range of steel forms due to endless abdominal illnesses.
 PRED SCORE: -11.9806
+GOLD 223: A range of mountains forms due to tectonic plate collision.
+GOLD SCORE: -291.4097
 
 SENT 224: ['Mountaineers', 'are', 'people', 'who', 'climb', 'or', 'hike', 'up', 'mountains.']
 PRED 224: <unk> are people who climb or hike up buses.
 PRED SCORE: -3.9564
+GOLD 224: <unk> are people who climb or hike up mountains.
+GOLD SCORE: -236.1816
 
 SENT 225: ['The', 'mouth', 'is', 'the', 'face', 'cavity', 'we', 'put', 'food', 'in', 'when', 'we', 'eat.']
 PRED 225: The metal is the face detailing we put food in when we eat.
 PRED SCORE: -6.9009
+GOLD 225: The mouth is the face cavity we put food in when we eat.
+GOLD SCORE: -353.9024
 
 SENT 226: ['The', 'mouth', 'has', 'teeth', 'to', 'chew', 'food', 'and', 'mix', 'it', 'with', 'saliva.']
 PRED 226: The metal has tended to fetch food and mix it with <unk>
 PRED SCORE: -4.7914
+GOLD 226: The mouth has teeth to chew food and mix it with <unk>
+GOLD SCORE: -346.6322
 
 SENT 227: ['The', 'mouth', 'is', 'also', 'used', 'for', 'kissing', 'and', 'talking.']
 PRED 227: The metal is also used for laughter and talking.
 PRED SCORE: -5.1816
+GOLD 227: The mouth is also used for kissing and talking.
+GOLD SCORE: -248.8985
 
 SENT 228: ['Speech', 'sounds', 'are', 'controlled', 'by', 'tongue', 'placement', 'in', 'the', 'mouth.']
 PRED 228: Rules sounds are controlled by spinning colors in the mouth.
 PRED SCORE: -9.8885
+GOLD 228: Speech sounds are controlled by tongue placement in the mouth.
+GOLD SCORE: -259.3522
 
 SENT 229: ['A', 'mug', 'is', 'a', 'sturdy', 'cup', 'with', 'a', 'handle', 'for', 'drinking', 'hot', 'liquids.']
 PRED 229: A WOMAN is a vegetarian cup with a dressing for drinking hot <unk>
 PRED SCORE: -11.9046
+GOLD 229: A mug is a sturdy cup with a handle for drinking hot <unk>
+GOLD SCORE: -313.7951
 
 SENT 230: ['A', 'mug', 'is', 'normally', 'ceramic,', 'but', 'can', 'also', 'be', 'made', 'of', 'metal', 'or', 'glass.']
 PRED 230: A WOMAN is normally <unk> but can also be made of metal or glass.
 PRED SCORE: -6.5406
+GOLD 230: A mug is normally <unk> but can also be made of metal or glass.
+GOLD SCORE: -349.2703
 
 SENT 231: ['A', 'mug', 'is', 'thick', 'and', 'has', 'a', 'ring', 'base', 'for', 'thermal', 'insulation.']
 PRED 231: A fist is thick and has a ring base for cotton <unk>
 PRED SCORE: -9.2722
+GOLD 231: A mug is thick and has a ring base for thermal <unk>
+GOLD SCORE: -325.7581
 
 SENT 232: ['Mugs', 'can', 'be', 'plain', 'or', 'have', 'drawings', 'imprinted', 'or', 'carved', 'on', 'them.']
 PRED 232: <unk> can be raw or have 'no <unk> or toast on them.
 PRED SCORE: -6.8659
+GOLD 232: <unk> can be plain or have drawings <unk> or carved on them.
+GOLD SCORE: -287.1136
 
 SENT 233: ['Murder', 'is', 'the', 'unlawful', 'killing', 'of', 'another', 'human', 'being', 'with', 'intent.']
 PRED 233: Murder is the temple killing of another human being with intent.
 PRED SCORE: -6.6508
+GOLD 233: Murder is the unlawful killing of another human being with intent.
+GOLD SCORE: -282.1982
 
 SENT 234: ['Murder', 'a', 'serious', 'crime', 'because', 'it', 'deprives', 'the', 'victim', 'of', 'their', 'existence.']
 PRED 234: Murder a serious crime because it <unk> the victim of their existence.
 PRED SCORE: -2.3118
+GOLD 234: Murder a serious crime because it <unk> the victim of their existence.
+GOLD SCORE: -342.6195
 
 SENT 235: ['Killing', 'in', 'self-defense,', 'accidentally', 'or', 'in', 'war', 'is', 'not', 'considered', 'murder.']
 PRED 235: Killing in <unk> chased or in war is not considered murder.
 PRED SCORE: -5.7878
+GOLD 235: Killing in <unk> accidentally or in war is not considered murder.
+GOLD SCORE: -276.7937
 
 SENT 236: ['A', 'convicted', 'murderer', 'is', 'often', 'given', 'a', 'life', 'sentence', 'or', 'the', 'death', 'penalty.']
 PRED 236: A convicted murderer is often given a life sentence or the death penalty.
 PRED SCORE: -1.9230
+GOLD 236: A convicted murderer is often given a life sentence or the death penalty.
+GOLD SCORE: -367.7984
 
 SENT 237: ['Orange', 'juice', 'is', 'a', 'drink', 'made', 'from', 'the', 'liquid', 'in', 'orange', 'pulp.']
 PRED 237: Orange juice is a drink made from the liquid in orange <unk>
 PRED SCORE: -3.0539
+GOLD 237: Orange juice is a drink made from the liquid in orange <unk>
+GOLD SCORE: -303.5815
 
 SENT 238: ['Orange', 'juice', 'has', 'a', 'sweet,', 'acid', 'taste', 'and', 'contains', 'a', 'lot', 'of', 'vitamin', 'C.']
 PRED 238: Georgia juice has a strong, distinctive sugar and fish a lot of fried drugs.
 PRED SCORE: -13.6884
+GOLD 238: Orange juice has a sweet, acid taste and contains a lot of vitamin C.
+GOLD SCORE: -286.4607
 
 SENT 239: ['Freshly', 'squeezed', 'orange', 'juice', 'often', 'contains', 'pulp', 'as', 'well.']
 PRED 239: <unk> fried orange juice often contains apples as well.
 PRED SCORE: -9.9361
+GOLD 239: <unk> squeezed orange juice often contains pulp as well.
+GOLD SCORE: -190.2225
 
 SENT 240: ['Orange', 'juice', 'is', 'often', 'drunk', 'at', 'breakfast', 'from', 'a', 'glass.']
 PRED 240: Orange juice is often hidden at breakfast from a glass.
-PRED SCORE: -4.3774
+PRED SCORE: -4.3775
+GOLD 240: Orange juice is often drunk at breakfast from a glass.
+GOLD SCORE: -276.8995
 
 SENT 241: ['A', 'parrot', 'is', 'a', 'bird', 'that', 'lives', 'in', 'warm', 'and', 'tropical', 'regions.']
 PRED 241: A motorcyclist is a species that lives in warm and tropical regions.
 PRED SCORE: -7.2025
+GOLD 241: A parrot is a bird that lives in warm and tropical regions.
+GOLD SCORE: -305.7703
 
 SENT 242: ['Parrots', 'have', 'brightly-colored', 'feathers', 'and', 'a', 'sharp,', 'curved', 'beak.']
 PRED 242: <unk> have <unk> shapes and a dark, creamy <unk>
 PRED SCORE: -9.9917
+GOLD 242: <unk> have <unk> feathers and a sharp, curved <unk>
+GOLD SCORE: -255.3602
 
 SENT 243: ['Parrots', 'can', 'imitate', 'the', 'human', 'voice', 'if', 'they', 'hear', 'it', 'repeatedly.']
 PRED 243: <unk> can consist the human voice if they hear it about."
 PRED SCORE: -5.1684
+GOLD 243: <unk> can imitate the human voice if they hear it repeatedly.
+GOLD SCORE: -348.2071
 
 SENT 244: ['The', 'appearance', 'and', 'abilities', 'of', 'parrots', 'makes', 'them', 'popular', 'pets.']
 PRED 244: The appearance and long-term of <unk> makes them popular pets.
 PRED SCORE: -1.7957
+GOLD 244: The appearance and abilities of <unk> makes them popular pets.
+GOLD SCORE: -306.8631
 
 SENT 245: ['A', 'peach', 'is', 'an', 'orange-yellow', 'fruit', 'with', 'a', 'characteristic', 'smell.']
 PRED 245: A vegetarian is an <unk> fruit with a gentle smell.
 PRED SCORE: -8.7328
+GOLD 245: A peach is an <unk> fruit with a characteristic smell.
+GOLD SCORE: -260.2765
 
 SENT 246: ['The', 'skin', 'of', 'a', 'peach', 'is', 'thin', 'and', 'covered', 'in', 'small,', 'fine', 'hairs.']
 PRED 246: The skin of a workout is thin and covered in fat fine <unk>
 PRED SCORE: -5.3672
+GOLD 246: The skin of a peach is thin and covered in small, fine <unk>
+GOLD SCORE: -341.8160
 
 SENT 247: ['Peaches', 'have', 'a', 'large,', 'red-brown', 'stone', 'inside', 'which', 'contains', 'the', 'seed.']
 PRED 247: <unk> have a large, <unk> stone inside which contains the <unk>
 PRED SCORE: -2.1950
+GOLD 247: <unk> have a large, <unk> stone inside which contains the <unk>
+GOLD SCORE: -313.8023
 
 SENT 248: ['Peaches', 'are', 'sweet', 'and', 'delicate,', 'and', 'must', 'be', 'harvested', 'after', 'ripening.']
 PRED 248: <unk> are sweet and <unk> and must be streamed after <unk>
 PRED SCORE: -3.6842
+GOLD 248: <unk> are sweet and <unk> and must be harvested after <unk>
+GOLD SCORE: -302.5045
 
 SENT 249: ['The', 'piano', 'is', 'a', 'popular', 'musical', 'instrument', 'played', 'by', 'means', 'of', 'a', 'keyboard.']
 PRED 249: The audience, is a popular musical performer played by means of a <unk>
 PRED SCORE: -6.7029
+GOLD 249: The piano is a popular musical instrument played by means of a <unk>
+GOLD SCORE: -337.5122
 
 SENT 250: ['Pressing', 'a', 'piano', 'key', 'causes', 'a', 'felt-tipped', 'hammer', 'to', 'hit', 'a', 'vibrating', 'steel', 'string.']
 PRED 250: <unk> a phenomenon key causes a <unk> tunnel to hit a <unk> steel <unk>
 PRED SCORE: -7.9999
+GOLD 250: <unk> a piano key causes a <unk> hammer to hit a <unk> steel <unk>
+GOLD SCORE: -321.7538
 
 SENT 251: ['The', 'piano', 'has', 'an', 'enormous', 'note', 'range,', 'and', 'pedals', 'to', 'change', 'the', 'sound', 'quality.']
 PRED 251: The philosophy has an enormous daily temperature and <unk> to change the sound quality.
 PRED SCORE: -7.6025
+GOLD 251: The piano has an enormous note range, and <unk> to change the sound quality.
+GOLD SCORE: -349.2148
 
 SENT 252: ['The', 'piano', 'repertoire', 'is', 'large', 'and', 'famous', 'pianists', 'can', 'give', 'solo', 'concerts.']
 PRED 252: The piano drama, is large and famous <unk> can give solo steel.
 PRED SCORE: -11.6447
+GOLD 252: The piano repertoire is large and famous <unk> can give solo concerts.
+GOLD SCORE: -351.9320
 
 SENT 253: ['Piranhas', 'are', 'small,', 'ferocious', 'fish', 'that', 'live', 'in', 'South', 'American', 'rivers.']
 PRED 253: <unk> are small, torn fish that live in South American rivers.
 PRED SCORE: -7.5438
+GOLD 253: <unk> are small, ferocious fish that live in South American rivers.
+GOLD SCORE: -296.0905
 
 SENT 254: ['Piranhas', 'live', 'and', 'attack', 'in', 'schools', 'and', 'are', 'most', 'active', 'during', 'the', 'day.']
 PRED 254: <unk> live and attack in schools and are most active during the day.
 PRED SCORE: -1.8422
+GOLD 254: <unk> live and attack in schools and are most active during the day.
+GOLD SCORE: -344.0385
 
 SENT 255: ['Piranhas', 'have', 'very', 'sharp', 'teeth', 'and', 'are', 'opportunistic', 'carnivores.']
 PRED 255: <unk> have very sharp teeth and are downright <unk>
 PRED SCORE: -4.7052
+GOLD 255: <unk> have very sharp teeth and are opportunistic <unk>
+GOLD SCORE: -256.1315
 
 SENT 256: ['Piranhas', 'eat', 'fish,', 'insects,', 'lizards,', 'mammals', 'and', 'carrion.']
 PRED 256: <unk> eat tents overlooking <unk> lakes and <unk>
 PRED SCORE: -11.8351
+GOLD 256: <unk> eat fish, insects, <unk> mammals and <unk>
+GOLD SCORE: -194.6810
 
 SENT 257: ['The', 'raspberry', 'is', 'a', 'fruit', 'that', 'grows', 'in', 'forest', 'clearings', 'or', 'fields.']
 PRED 257: The keyboard is a taste that grows in suburban <unk> or fields.
 PRED SCORE: -8.2373
+GOLD 257: The raspberry is a fruit that grows in forest <unk> or fields.
+GOLD SCORE: -315.7999
 
 SENT 258: ['A', 'single', 'raspberry', 'consists', 'of', 'many', 'small', 'fruits', 'joined', 'together.']
 PRED 258: A single vegan mix of many small potatoes joined together.
 PRED SCORE: -11.1903
+GOLD 258: A single raspberry consists of many small fruits joined together.
+GOLD SCORE: -267.0446
 
 SENT 259: ['Raspberries', 'are', 'eaten', 'by', 'themselves', 'or', 'cooked', 'with', 'sugar', 'into', 'jam.']
 PRED 259: <unk> are eaten by themselves or cooked with sugar into <unk>
 PRED SCORE: -2.7949
+GOLD 259: <unk> are eaten by themselves or cooked with sugar into <unk>
+GOLD SCORE: -303.5499
 
 SENT 260: ['Leaves', 'of', 'the', 'raspberry', 'are', 'used', 'fresh', 'or', 'dried', 'in', 'herbal', 'teas.']
 PRED 260: Preheat of the costumes are small fresh or baked in nitrogen <unk>
 PRED SCORE: -15.2476
+GOLD 260: Leaves of the raspberry are used fresh or dried in herbal <unk>
+GOLD SCORE: -288.0772
 
 SENT 261: ['A', 'raven', 'is', 'a', 'large', 'black', 'bird', 'that', 'thrives', 'in', 'many', 'climates.']
 PRED 261: A <unk> is a large black planet that specializes in many <unk>
 PRED SCORE: -4.1642
+GOLD 261: A <unk> is a large black bird that thrives in many <unk>
+GOLD SCORE: -398.4370
 
 SENT 262: ['Ravens', 'feed', 'on', 'carrion,', 'insects,', 'berries', 'or', 'small', 'animals.']
 PRED 262: Yoga feed on <unk> watch, pour or small animals.
 PRED SCORE: -15.8985
+GOLD 262: Ravens feed on <unk> insects, berries or small animals.
+GOLD SCORE: -218.9384
 
 SENT 263: ['Ravens', 'have', 'large', 'brains', 'and', 'are', 'capable', 'of', 'problem', 'solving.']
 PRED 263: Buyers have large tools and are capable of problem <unk>
 PRED SCORE: -6.7897
+GOLD 263: Ravens have large brains and are capable of problem <unk>
+GOLD SCORE: -306.2054
 
 SENT 264: ['In', 'folklore', 'ravens', 'are', 'birds', 'of', 'ill-omen', 'and', 'also', 'tricksters.']
 PRED 264: In essence, <unk> are birds of <unk> and also <unk>
 PRED SCORE: -4.4236
+GOLD 264: In folklore <unk> are birds of <unk> and also <unk>
+GOLD SCORE: -330.8545
 
 SENT 265: ['A', 'refrigerator', 'is', 'a', 'cooling', 'device', 'used', 'to', 'contain', 'and', 'preserve', 'food.']
 PRED 265: A sinkhole is a wholesale device used to contain and preserve food.
 PRED SCORE: -10.5177
+GOLD 265: A refrigerator is a cooling device used to contain and preserve food.
+GOLD SCORE: -287.8221
 
 SENT 266: ['Some', 'refrigerators', 'can', 'have', 'a', 'small', 'compartment', 'at', 'freezing', 'temperature.']
 PRED 266: Some <unk> can have a small peek at freezing temperature.
 PRED SCORE: -5.1736
+GOLD 266: Some <unk> can have a small compartment at freezing temperature.
+GOLD SCORE: -260.4360
 
 SENT 267: ['A', 'refrigerator', 'can', 'have', 'shelves', 'and', 'small', 'compartments', 'for', 'different', 'types', 'of', 'food.']
 PRED 267: A sinkhole can have bedrooms and small <unk> for different types of food.
 PRED SCORE: -8.1847
+GOLD 267: A refrigerator can have shelves and small <unk> for different types of food.
+GOLD SCORE: -333.9327
 
 SENT 268: ['A', 'refrigerator', 'is', 'generally', 'white', 'and', 'people', 'often', 'put', 'magnets', 'on', 'its', 'surface.']
 PRED 268: A sinkhole is generally white and people often put tabs on its surface.
 PRED SCORE: -8.8691
+GOLD 268: A refrigerator is generally white and people often put magnets on its surface.
+GOLD SCORE: -338.9172
 
 SENT 269: ['A', 'rifle', 'is', 'a', 'firearm', 'that', 'rests', 'on', 'the', 'shoulder', 'and', 'has', 'a', 'barrel', 'with', 'twisting', 'grooves.']
 PRED 269: A rifle is a reminder that he, on the shoulder and has a 66 with "serious <unk>
 PRED SCORE: -12.1359
+GOLD 269: A rifle is a firearm that rests on the shoulder and has a barrel with twisting <unk>
+GOLD SCORE: -434.9128
 
 SENT 270: ['The', 'grooves', 'make', 'the', 'bullets', 'spin', 'around', 'the', 'rifle', 'axis', 'as', 'they', 'fly', 'through', 'the', 'air.']
 PRED 270: The <unk> make the car, soft around the car, which as they fly through the air.
 PRED SCORE: -9.5271
+GOLD 270: The <unk> make the bullets spin around the rifle axis as they fly through the air.
+GOLD SCORE: -405.6360
 
 SENT 271: ['Rifles', 'are', 'used', 'in', 'hunting', 'and', 'shooting', 'sports,', 'sometimes', 'with', 'scopes.']
 PRED 271: <unk> are used in hunting and war centres sometimes with <unk>
 PRED SCORE: -4.3362
+GOLD 271: <unk> are used in hunting and shooting sports, sometimes with <unk>
+GOLD SCORE: -322.9656
 
 SENT 272: ['Assault', 'rifles', 'can', 'fire', 'in', 'bursts', 'and', 'are', 'the', 'standard', 'infantry', 'weapon.']
 PRED 272: Table commuters can fire in agony and are the typical infant refugees.
 PRED SCORE: -16.4350
+GOLD 272: Assault rifles can fire in bursts and are the standard infantry weapon.
+GOLD SCORE: -280.8350
 
 SENT 273: ['Salmon', 'is', 'a', 'fish', 'that', 'migrates', 'from', 'fresh', 'water', 'to', 'the', 'ocean', 'and', 'back', 'to', 'spawn.']
 PRED 273: Alternatively, is a fish that <unk> from fresh water to the ocean and back to <unk>
 PRED SCORE: -5.2086
+GOLD 273: Salmon is a fish that <unk> from fresh water to the ocean and back to <unk>
+GOLD SCORE: -403.4211
 
 SENT 274: ['Salmon', 'flesh', 'is', 'orange', 'or', 'red', 'and', 'has', 'high', 'protein', 'content', 'and', 'a', 'nice', 'taste.']
 PRED 274: SEE ALSO: is orange or red and has high content content and a nice taste.
 PRED SCORE: -12.1536
+GOLD 274: Salmon flesh is orange or red and has high protein content and a nice taste.
+GOLD SCORE: -338.1719
 
 SENT 275: ['Salmon', 'can', 'be', 'eaten', 'raw', 'in', 'sushi', 'or', 'cooked', 'by', 'grilling,', 'poaching', 'or', 'in', 'other', 'ways.']
 PRED 275: There'll can be eaten raw in cotton or cooked by <unk> coloured in an other ways.
 PRED SCORE: -17.9974
+GOLD 275: Salmon can be eaten raw in sushi or cooked by <unk> poaching or in other ways.
+GOLD SCORE: -345.7091
 
 SENT 276: ['Salmon', 'is', 'the', 'most', 'common', 'farmed', 'fish,', 'though', 'it', 'can', 'also', 'be', 'caught', 'in', 'the', 'wild.']
 PRED 276: Shoreham is the most common laser per cent) it can also be caught in the wild.
 PRED SCORE: -15.4575
+GOLD 276: Salmon is the most common farmed fish, though it can also be caught in the wild.
+GOLD SCORE: -373.4287
 
 SENT 277: ['A', 'saw', 'is', 'a', 'tool', 'that', 'uses', 'a', 'hard', 'blade', 'or', 'abrasive', 'wire', 'to', 'cut', 'hard', 'materials.']
 PRED 277: A day is a tool that uses a hard or deaf eye, fitted to cut hard materials.
 PRED SCORE: -14.6106
+GOLD 277: A saw is a tool that uses a hard blade or abrasive wire to cut hard materials.
+GOLD SCORE: -453.5038
 
 SENT 278: ['The', 'small', 'sharp', 'points', 'along', 'the', 'cutting', 'side', 'of', 'the', 'saw', 'are', 'called', 'the', 'teeth.']
 PRED 278: The small advantage points along the cutting side of the way to four the teeth.
 PRED SCORE: -3.7361
+GOLD 278: The small sharp points along the cutting side of the saw are called the teeth.
+GOLD SCORE: -362.3193
 
 SENT 279: ['Saws', 'can', 'be', 'worked', 'by', 'hand,', 'or', 'powered', 'by', 'an', 'electric', 'motor', 'or', 'gas', 'engine.']
 PRED 279: <unk> can be worked by consumers or switch by an electric motor or gas engine.
 PRED SCORE: -9.0463
+GOLD 279: <unk> can be worked by hand, or powered by an electric motor or gas engine.
+GOLD SCORE: -330.7621
 
 SENT 280: ['Saws', 'are', 'used', 'extensively', 'in', 'forestry,', 'construction,', 'carpentry', 'and', 'medicine.']
 PRED 280: <unk> are used locally in <unk> fashion, <unk> and medicine.
 PRED SCORE: -9.4122
+GOLD 280: <unk> are used extensively in <unk> construction, <unk> and medicine.
+GOLD SCORE: -224.1916
 
 SENT 281: ['A', 'scientist', 'studies', 'and', 'produces', 'new', 'knowledge', 'about', 'the', 'physical', 'world.']
 PRED 281: A scientist studies and produces new attention about the physical world.
 PRED SCORE: -4.2836
+GOLD 281: A scientist studies and produces new knowledge about the physical world.
+GOLD SCORE: -272.4914
 
 SENT 282: ['A', 'scientist', 'creates', 'hypotheses', 'and', 'does', 'experiments', 'to', 'test', 'them.']
 PRED 282: A scientist creates <unk> and that, responding to test them.
 PRED SCORE: -3.1653
+GOLD 282: A scientist creates <unk> and does experiments to test them.
+GOLD SCORE: -307.9037
 
 SENT 283: ['Physics,', 'chemistry', 'and', 'biology', 'are', 'classic', 'examples', 'of', 'sciences.']
 PRED 283: <unk> chemistry and audio are classic examples of <unk>
 PRED SCORE: -5.9120
+GOLD 283: <unk> chemistry and biology are classic examples of <unk>
+GOLD SCORE: -253.1393
 
 SENT 284: ['Scientists', 'publish', 'their', 'research', 'in', 'journals', 'and', 'conferences.']
 PRED 284: Scientists publish their research in isolation and conferences.
 PRED SCORE: -7.2284
+GOLD 284: Scientists publish their research in journals and conferences.
+GOLD SCORE: -206.0020
 
 SENT 285: ['Scissors', 'are', 'a', 'two-bladed', 'instrument', 'used', 'for', 'cutting.']
 PRED 285: <unk> are a <unk> instrument used for <unk>
 PRED SCORE: -3.4893
+GOLD 285: <unk> are a <unk> instrument used for <unk>
+GOLD SCORE: -237.6038
 
 SENT 286: ['Scissor', 'blades', 'are', 'usually', 'metallic,', 'with', 'plastic', 'or', 'metal', 'handles.']
 PRED 286: <unk> indications are usually <unk> with plastic or metal <unk>
 PRED SCORE: -4.1517
+GOLD 286: <unk> blades are usually <unk> with plastic or metal <unk>
+GOLD SCORE: -256.7970
 
 SENT 287: ['Depending', 'on', 'the', 'size', 'and', 'format,', 'scissors', 'can', 'cut', 'paper,', 'hair', 'or', 'fabric.']
 PRED 287: Depending on the size and watch, there'll can cut everyday hair or <unk>
 PRED SCORE: -13.8293
+GOLD 287: Depending on the size and format, scissors can cut paper, hair or <unk>
+GOLD SCORE: -352.5003
 
 SENT 288: ['Shears', 'are', 'large', 'scissors', 'used', 'for', 'cutting', 'shrubs', 'or', 'pieces', 'of', 'metal.']
 PRED 288: <unk> are large foods, used for cutting <unk> or pieces of metal.
 PRED SCORE: -6.6473
+GOLD 288: <unk> are large scissors used for cutting <unk> or pieces of metal.
+GOLD SCORE: -329.5443
 
 SENT 289: ['A', 'screwdriver', 'is', 'a', 'tool', 'for', 'inserting', 'and', 'tightening', 'screws', 'into', 'something.']
 PRED 289: A <unk> is a tool for Citizens and Commerce expenditure into something.
 PRED SCORE: -14.4955
+GOLD 289: A <unk> is a tool for inserting and tightening screws into something.
+GOLD SCORE: -299.7102
 
 SENT 290: ['Screwdrivers', 'can', 'also', 'be', 'used', 'to', 'remove', 'screws', 'after', 'they', 'are', 'inserted.']
 PRED 290: <unk> can also be used to remove traffic, after they are <unk>
 PRED SCORE: -5.3976
+GOLD 290: <unk> can also be used to remove screws after they are <unk>
+GOLD SCORE: -315.7975
 
 SENT 291: ['The', 'screwdriver', 'tip', 'applies', 'the', 'torque', 'from', 'rotating', 'the', 'handle.']
 PRED 291: The <unk> tip contains the <unk> from the fabric handle.
 PRED SCORE: -13.0909
+GOLD 291: The <unk> tip applies the <unk> from rotating the handle.
+GOLD SCORE: -254.0062
 
 SENT 292: ['The', 'two', 'major', 'types', 'of', 'screwdriver', 'are', 'Phillips', 'and', 'flathead.']
 PRED 292: The two major types of <unk> are theft and <unk>
 PRED SCORE: -1.1624
+GOLD 292: The two major types of <unk> are Phillips and <unk>
+GOLD SCORE: -324.5008
 
 SENT 293: ['A', 'shark', 'is', 'a', 'large', 'fish', 'with', 'a', 'cartilage', 'skeleton.']
 PRED 293: A shark is a large fish with a crystal <unk>
 PRED SCORE: -3.7463
+GOLD 293: A shark is a large fish with a cartilage <unk>
+GOLD SCORE: -296.2126
 
 SENT 294: ['Sharks', 'have', 'streamlined', 'bodies,', 'with', 'a', 'large', 'dorsal', 'fin.']
 PRED 294: Sharks have collaborated abroad with a large <unk> <unk>
 PRED SCORE: -8.3101
+GOLD 294: Sharks have streamlined bodies, with a large <unk> <unk>
+GOLD SCORE: -251.1321
 
 SENT 295: ['Most', 'sharks', 'predate', 'on', 'fish', 'and', 'mammals,', 'with', 'powerful', 'jaws.']
 PRED 295: Most elderly <unk> on fish and downs with powerful <unk>
 PRED SCORE: -7.2588
+GOLD 295: Most sharks <unk> on fish and mammals, with powerful <unk>
+GOLD SCORE: -258.8350
 
 SENT 296: ['Sharks', 'have', 'very', 'keen', 'senses', 'and', 'can', 'detect', 'electrical', 'fields.']
 PRED 296: Sharks have very keen questions, and can detect electrical fields.
 PRED SCORE: -8.3609
+GOLD 296: Sharks have very keen senses and can detect electrical fields.
+GOLD SCORE: -254.7623
 
 SENT 297: ['A', 'ship', 'is', 'a', 'large', 'vehicle', 'that', 'floats', 'and', 'travels', 'on', 'water.']
 PRED 297: A ship is a large vehicle that lasts and burned on water.
 PRED SCORE: -4.8733
+GOLD 297: A ship is a large vehicle that floats and travels on water.
+GOLD SCORE: -315.0706
 
 SENT 298: ['A', 'ship', 'can', 'be', 'powered', 'in', 'the', 'ocean', 'by', 'sails,', 'steam,', 'or', 'diesel', 'engines.']
 PRED 298: A ship can be powered in the ocean by <unk> <unk> or offshore engines.
 PRED SCORE: -4.1768
+GOLD 298: A ship can be powered in the ocean by <unk> <unk> or diesel engines.
+GOLD SCORE: -336.2068
 
 SENT 299: ['Ships', 'are', 'used', 'to', 'fish', 'in', 'the', 'ocean', 'and', 'to', 'transport', 'cargo', 'containers.']
 PRED 299: <unk> are used to fish in the ocean and to transport cargo <unk>
 PRED SCORE: -0.9592
+GOLD 299: <unk> are used to fish in the ocean and to transport cargo <unk>
+GOLD SCORE: -335.9591
 
 SENT 300: ['Cruise', 'ships', 'are', 'floating', 'hotels', 'that', 'take', 'people', 'between', 'cities.']
 PRED 300: Cruise ships are floating hotels that take people between cities.
 PRED SCORE: -3.3387
+GOLD 300: Cruise ships are floating hotels that take people between cities.
+GOLD SCORE: -292.9693
 
 SENT 301: ['A', 'shoe', 'is', 'clothing', 'for', 'the', 'foot,', 'with', 'a', 'sole,', 'an', 'outsole', 'and', 'a', 'heel.']
 PRED 301: A shoe is painted for the cage with a <unk> an <unk> and a <unk>
 PRED SCORE: -4.9738
+GOLD 301: A shoe is clothing for the foot, with a <unk> an <unk> and a <unk>
+GOLD SCORE: -387.2075
 
 SENT 302: ['Shoes', 'are', 'usually', 'made', 'of', 'leather,', 'canvas,', 'rubber', 'or', 'plastic.']
 PRED 302: Stick are usually made of <unk> <unk> rubber or <unk>
 PRED SCORE: -7.3904
+GOLD 302: Shoes are usually made of <unk> <unk> rubber or <unk>
+GOLD SCORE: -284.2366
 
 SENT 303: ["Women's", 'shoes', 'often', 'have', 'high', 'heels', 'and', 'come', 'in', 'many', 'styles', 'and', 'colors.']
 PRED 303: Women's shoes often have high heels and come in many shapes and chips.
 PRED SCORE: -5.2172
+GOLD 303: Women's shoes often have high heels and come in many styles and colors.
+GOLD SCORE: -346.3648
 
 SENT 304: ['A', 'sneaker', 'is', 'a', 'shoe', 'for', 'sports', 'and', 'athletic', 'activity.']
 PRED 304: A <unk> is a shoe for sports and athletic activity.
 PRED SCORE: -3.0488
+GOLD 304: A <unk> is a shoe for sports and athletic activity.
+GOLD SCORE: -264.8685
 
 SENT 305: ['A', 'soldier', 'is', 'a', 'member', 'of', 'the', 'national', 'armed', 'forces', 'who', 'fights', 'on', 'land.']
 PRED 305: A soldier is a member of the national armed forces who fought on land.
 PRED SCORE: -0.8541
+GOLD 305: A soldier is a member of the national armed forces who fights on land.
+GOLD SCORE: -368.0648
 
 SENT 306: ['A', 'soldier', 'in', 'the', 'militia', 'must', 'wear', 'a', 'uniform,', 'usually', 'camouflage.']
 PRED 306: A soldier in the palace must wear a backpack usually <unk>
 PRED SCORE: -6.9163
+GOLD 306: A soldier in the militia must wear a uniform, usually <unk>
+GOLD SCORE: -315.1685
 
 SENT 307: ['In', 'a', 'volunteer', 'army,', 'a', 'soldier', 'is', 'paid', 'for', 'his', 'or', 'her', 'work.']
 PRED 307: In a volunteer force, a soldier is paid for his or her work.
 PRED SCORE: -3.1601
+GOLD 307: In a volunteer army, a soldier is paid for his or her work.
+GOLD SCORE: -332.2532
 
 SENT 308: ['A', 'soldier', 'fights', 'using', 'weapons', 'such', 'as', 'rifles', 'and', 'grenades.']
 PRED 308: A soldier fights using weapons such as riot and <unk>
 PRED SCORE: -6.1110
+GOLD 308: A soldier fights using weapons such as rifles and <unk>
+GOLD SCORE: -257.4895
 
 SENT 309: ['Spears', 'are', 'weapons', 'that', 'consist', 'of', 'a', 'pole', 'and', 'sharpened', 'head', 'at', 'one', 'end.']
 PRED 309: 'You are weapons that consist of a pole and at match together," back down.
 PRED SCORE: -14.4206
+GOLD 309: Spears are weapons that consist of a pole and sharpened head at one end.
+GOLD SCORE: -355.7940
 
 SENT 310: ['Spears', 'were', 'the', 'most', 'common', 'personal', 'weapon', 'before', 'the', 'advent', 'of', 'firearms.']
 PRED 310: THERE were the most common personal power, before the contents of Mars.
 PRED SCORE: -9.4641
+GOLD 310: Spears were the most common personal weapon before the advent of firearms.
+GOLD SCORE: -295.9083
 
 SENT 311: ['Spears', 'were', 'used', 'for', 'stabbing', 'or', 'throwing', 'when', 'fighting', 'in', 'war.']
 PRED 311: THERE were used for attempted or throwing when fighting in war.
-PRED SCORE: -5.9777
+PRED SCORE: -5.9778
+GOLD 311: Spears were used for stabbing or throwing when fighting in war.
+GOLD SCORE: -286.4638
 
 SENT 312: ['Some', 'native', 'people', 'still', 'use', 'the', 'spear', 'for', 'hunting', 'and', 'fishing.']
 PRED 312: Some native people still use the groundwork for smoke and fishing.
 PRED SCORE: -6.8775
+GOLD 312: Some native people still use the spear for hunting and fishing.
+GOLD SCORE: -285.5498
 
 SENT 313: ['Spiders', 'are', 'insects', 'with', 'eight', 'legs', 'that', 'make', 'silk.']
 PRED 313: <unk> are fitted with eight legs that make <unk>
 PRED SCORE: -1.6541
+GOLD 313: <unk> are insects with eight legs that make <unk>
+GOLD SCORE: -299.4799
 
 SENT 314: ['Spiders', 'build', 'webs', 'with', 'silk', 'and', 'use', 'them', 'to', 'catch', 'insects.']
 PRED 314: <unk> build <unk> with champagne and use them to catch sharks.
 PRED SCORE: -5.8130
+GOLD 314: <unk> build <unk> with silk and use them to catch insects.
+GOLD SCORE: -297.9123
 
 SENT 315: ['Spiders', 'use', 'venomous', 'fangs', 'to', 'paralyse', 'their', 'stuck', 'prey.']
 PRED 315: <unk> use someone's <unk> to <unk> their fair legs.
 PRED SCORE: -8.3844
+GOLD 315: <unk> use venomous <unk> to <unk> their stuck prey.
+GOLD SCORE: -238.9395
 
 SENT 316: ['Spiders', 'can', 'be', 'as', 'small', 'as', 'a', 'coin', 'or', 'as', 'big', 'as', 'a', 'bird.']
 PRED 316: <unk> can be as small as a tin or as big as a bird.
 PRED SCORE: -4.0656
+GOLD 316: <unk> can be as small as a coin or as big as a bird.
+GOLD SCORE: -356.7856
 
 SENT 317: ['Swamps', 'are', 'low,', 'spongy', 'land', 'subject', 'to', 'frequent', 'inundation.']
 PRED 317: <unk> are shipping <unk> operation subject to frequent <unk>
 PRED SCORE: -3.2640
+GOLD 317: <unk> are low, <unk> land subject to frequent <unk>
+GOLD SCORE: -255.5232
 
 SENT 318: ['A', 'swamp', 'is', 'covered', 'with', 'shallow', 'water,', 'mud', 'and', 'vegetation.']
 PRED 318: A plaque is covered with bare water, mud and <unk>
 PRED SCORE: -11.2987
+GOLD 318: A swamp is covered with shallow water, mud and <unk>
+GOLD SCORE: -262.4848
 
 SENT 319: ['Swamps', 'are', 'nesting', 'and', 'breeding', 'grounds', 'for', 'birds', 'and', 'reptiles.']
 PRED 319: <unk> are preserved and protected grounds for birds and <unk>
 PRED SCORE: -7.2586
+GOLD 319: <unk> are nesting and breeding grounds for birds and <unk>
+GOLD SCORE: -250.7846
 
 SENT 320: ['Farmers', 'often', 'drain', 'swamps', 'to', 'produce', 'fertile', 'arable', 'land.']
 PRED 320: Farmers often burn <unk> to produce brightly <unk> land.
 PRED SCORE: -10.8674
+GOLD 320: Farmers often drain <unk> to produce fertile <unk> land.
+GOLD SCORE: -241.8448
 
 SENT 321: ['A', 'sweater', 'is', 'a', 'heavy', 'garment', 'worn', 'on', 'the', 'torso', 'for', 'warmth.']
 PRED 321: A plaque is a heavy rubber gown on the aisle for <unk>
 PRED SCORE: -12.2096
+GOLD 321: A sweater is a heavy garment worn on the torso for <unk>
+GOLD SCORE: -346.9866
 
 SENT 322: ['Sweaters', 'are', 'often', 'knitted', 'from', 'wool', 'but', 'cotton', 'is', 'also', 'common.']
 PRED 322: <unk> are often baffled from snow, but but is also common.
 PRED SCORE: -13.5157
+GOLD 322: <unk> are often knitted from wool but cotton is also common.
+GOLD SCORE: -275.1837
 
 SENT 323: ['A', 'sweater', 'that', 'opens', 'down', 'the', 'front', 'is', 'called', 'a', 'cardigan.']
 PRED 323: A plaque that opens down the front is called a <unk>
 PRED SCORE: -5.2182
+GOLD 323: A sweater that opens down the front is called a <unk>
+GOLD SCORE: -352.1753
 
 SENT 324: ['Sweaters', 'differ', 'in', 'cut,', 'collar', 'and', 'sleeve', 'shape,', 'as', 'well', 'as', 'decoration.']
 PRED 324: <unk> has, in attendance sticks and gently as apple well as <unk>
 PRED SCORE: -16.1829
+GOLD 324: <unk> differ in cut, collar and sleeve shape, as well as <unk>
+GOLD SCORE: -253.1671
 
 SENT 325: ['A', 'table', 'is', 'a', 'piece', 'of', 'furniture', 'with', 'a', 'flat', 'surface', 'and', 'legs.']
 PRED 325: A table is a piece of furniture with a flat surface and legs.
 PRED SCORE: -2.0943
+GOLD 325: A table is a piece of furniture with a flat surface and legs.
+GOLD SCORE: -335.8241
 
 SENT 326: ['There', 'are', 'usually', 'chairs', 'around', 'a', 'table', 'for', 'people', 'to', 'sit.']
 PRED 326: There are usually 120 around a table for people to <unk>
 PRED SCORE: -2.8259
+GOLD 326: There are usually chairs around a table for people to <unk>
+GOLD SCORE: -355.6528
 
 SENT 327: ['People', 'set', 'cutlery,', 'plates', 'and', 'food', 'on', 'a', 'table', 'to', 'eat', 'a', 'meal', 'together.']
 PRED 327: People set <unk> plates and food on a table to eat a meal together.
 PRED SCORE: -0.7406
+GOLD 327: People set <unk> plates and food on a table to eat a meal together.
+GOLD SCORE: -355.8468
 
 SENT 328: ['Tables', 'are', 'also', 'used', 'as', 'surfaces', 'to', 'work', 'or', 'write', 'on.']
 PRED 328: <unk> are also used as alternatives to work or write on.
 PRED SCORE: -3.7578
+GOLD 328: <unk> are also used as surfaces to work or write on.
+GOLD SCORE: -257.0240
 
 SENT 329: ['A', 'television', 'is', 'an', 'appliance', 'with', 'a', 'screen', 'that', 'displays', 'moving', 'images.']
 PRED 329: A television is an upgraded with a screen that tastes moving images.
 PRED SCORE: -5.3466
+GOLD 329: A television is an appliance with a screen that displays moving images.
+GOLD SCORE: -297.8599
 
 SENT 330: ['Televisions', 'are', 'mostly', 'used', 'for', 'watching', 'programs', 'or', 'films.']
 PRED 330: <unk> are mostly used for watching individual or films.
 PRED SCORE: -3.2242
+GOLD 330: <unk> are mostly used for watching programs or films.
+GOLD SCORE: -255.6724
 
 SENT 331: ['Televisions', 'are', 'used', 'to', 'play', 'videogames', 'when', 'connected', 'to', 'a', 'game', 'console.']
 PRED 331: <unk> are used to play <unk> when connected to a game <unk>
 PRED SCORE: -0.1010
+GOLD 331: <unk> are used to play <unk> when connected to a game <unk>
+GOLD SCORE: -369.3198
 
 SENT 332: ['Television', 'content', 'can', 'be', 'broadcast', 'or', 'received', 'via', 'cable', 'or', 'internet.']
 PRED 332: Television content can be broadcast or received via Apple's or internet.
 PRED SCORE: -2.8744
+GOLD 332: Television content can be broadcast or received via cable or internet.
+GOLD SCORE: -276.8035
 
 SENT 333: ['Theft', 'is', 'the', 'taking', 'of', "person's", 'property', 'without', 'their', 'consent.']
 PRED 333: Truth is the taking of depression property without their consent.
 PRED SCORE: -7.3034
+GOLD 333: Theft is the taking of person's property without their consent.
+GOLD SCORE: -277.6905
 
 SENT 334: ['Thieves', 'steal', 'to', 'own', 'something', 'or', 'to', 'sell', 'it', 'to', 'receivers.']
 PRED 334: Thieves rushed to own something or to sell it to <unk>
 PRED SCORE: -5.5488
+GOLD 334: Thieves steal to own something or to sell it to <unk>
+GOLD SCORE: -278.4687
 
 SENT 335: ['Theft', 'is', 'a', 'crime', 'and', 'can', 'be', 'punishable', 'with', 'jail', 'or', 'fines.']
 PRED 335: Travellers is a crime and can be deported with jail or fines.
 PRED SCORE: -6.7608
+GOLD 335: Theft is a crime and can be punishable with jail or fines.
+GOLD SCORE: -322.5411
 
 SENT 336: ['Industrial', 'espionage', 'is', 'theft', 'of', 'ideas', 'and', 'intellectual', 'property.']
 PRED 336: HSBC blames is theft of professional and intellectual property.
 PRED SCORE: -8.3854
+GOLD 336: Industrial espionage is theft of ideas and intellectual property.
+GOLD SCORE: -241.3156
 
 SENT 337: ['A', 'toaster', 'is', 'a', 'kitchen', 'appliance', 'for', 'toasting', 'bread', 'using', 'heating', 'elements.']
 PRED 337: A <unk> is a kitchen laboratory for <unk> bread using diesel elements.
 PRED SCORE: -9.3038
+GOLD 337: A <unk> is a kitchen appliance for <unk> bread using heating elements.
+GOLD SCORE: -294.9479
 
 SENT 338: ['Pop-up', 'toasters', 'toast', 'the', 'bread', 'placed', 'in', 'a', 'slot', 'and', 'eject', 'it', 'once', 'done.']
 PRED 338: <unk> <unk> sliced the bread placed in a tin and <unk> it once done.
 PRED SCORE: -7.4730
+GOLD 338: <unk> <unk> toast the bread placed in a slot and <unk> it once done.
+GOLD SCORE: -295.5928
 
 SENT 339: ['Toaster', 'ovens', 'have', 'a', 'door', 'on', 'the', 'side,', 'a', 'tray', 'within', 'and', 'temperature', 'control.']
 PRED 339: <unk> <unk> have a door on the side, a workout and open temperature control.
 PRED SCORE: -6.3769
+GOLD 339: <unk> <unk> have a door on the side, a tray within and temperature control.
+GOLD SCORE: -308.6502
 
 SENT 340: ['Toaster', 'ovens', 'allow', 'bread', 'to', 'be', 'cooked', 'with', 'toppings', 'like', 'garlic', 'or', 'cheese.']
 PRED 340: <unk> <unk> allow bread to be cooked with <unk> like dried or cheese.
 PRED SCORE: -5.8375
+GOLD 340: <unk> <unk> allow bread to be cooked with <unk> like garlic or cheese.
+GOLD SCORE: -267.2578
 
 SENT 341: ['The', 'tomato', 'is', 'a', 'shiny', 'and', 'smooth', 'red', 'fruit,', 'with', 'a', 'savory', 'taste.']
 PRED 341: The tomato is a gorgeous and smooth red potato with a <unk> taste.
 PRED SCORE: -8.5646
+GOLD 341: The tomato is a shiny and smooth red fruit, with a <unk> taste.
+GOLD SCORE: -299.7790
 
 SENT 342: ['A', 'tomato', 'softens', 'and', 'changes', 'color', 'from', 'green', 'to', 'red', 'as', 'it', 'gets', 'more', 'ripe.']
 PRED 342: A potato <unk> and changes color from green to red as it gets more <unk>
 PRED SCORE: -4.5636
+GOLD 342: A tomato <unk> and changes color from green to red as it gets more <unk>
+GOLD SCORE: -416.0064
 
 SENT 343: ['Tomatos', 'can', 'be', 'used', 'to', 'make', 'salads,', 'soup', 'or', 'ketchup,', 'as', 'well', 'as', 'sauce.']
 PRED 343: <unk> can be used to make <unk> salad or <unk> as well as sauce.
 PRED SCORE: -2.7504
+GOLD 343: <unk> can be used to make <unk> soup or <unk> as well as sauce.
+GOLD SCORE: -323.7228
 
 SENT 344: ['There', 'are', 'many', 'varieties', 'of', 'tomato,', 'with', 'different', 'sizes', 'and', 'tastes.']
 PRED 344: There are many varieties of <unk> with different fruits and consistency.
 PRED SCORE: -5.3598
+GOLD 344: There are many varieties of <unk> with different sizes and tastes.
+GOLD SCORE: -327.6299
 
 SENT 345: ['A', 'train', 'is', 'a', 'connected', 'series', 'of', 'cars', 'that', 'moves', 'between', 'stations', 'on', 'a', 'track.']
 PRED 345: A train is a connected series of growing that slow between Alaska on a track.
 PRED SCORE: -5.0781
+GOLD 345: A train is a connected series of cars that moves between stations on a track.
+GOLD SCORE: -419.4228
 
 SENT 346: ['The', 'train', 'is', 'pulled', 'by', 'a', 'locomotive,', 'powered', 'by', 'diesel', 'or', 'electricity.']
 PRED 346: The train is pulled by a <unk> powered by heating or electricity.
 PRED SCORE: -6.4848
+GOLD 346: The train is pulled by a <unk> powered by diesel or electricity.
+GOLD SCORE: -326.2512
 
 SENT 347: ['A', 'freight', 'train', 'transports', 'containers', 'of', 'goods', 'or', 'fuel', 'over', 'long', 'distances.']
 PRED 347: A railway train SUV consist of goods or fuel over long <unk>
 PRED SCORE: -10.9370
+GOLD 347: A freight train transports containers of goods or fuel over long <unk>
+GOLD SCORE: -337.9180
 
 SENT 348: ['Commuter', 'trains', 'transport', 'people', 'between', 'suburbs', 'and', 'stations', 'inside', 'a', 'city.']
 PRED 348: <unk> trains transport people between Nigeria and abandoned inside a city.
 PRED SCORE: -2.7489
+GOLD 348: <unk> trains transport people between suburbs and stations inside a city.
+GOLD SCORE: -272.4373
 
 SENT 349: ['A', 'train', 'station', 'is', 'a', 'place', 'where', 'passengers', 'get', 'on', 'or', 'off', 'a', 'train.']
 PRED 349: A train station is a place where passengers get on or off a train.
 PRED SCORE: -0.0795
+GOLD 349: A train station is a place where passengers get on or off a train.
+GOLD SCORE: -363.2924
 
 SENT 350: ['Train', 'stations', 'have', 'counters', 'or', 'machines', 'for', 'purchasing', 'tickets.']
 PRED 350: Train stations have sprung or faster for wireless tickets.
 PRED SCORE: -8.9433
+GOLD 350: Train stations have counters or machines for purchasing tickets.
+GOLD SCORE: -237.3640
 
 SENT 351: ['There', 'are', 'waiting', 'rooms', 'and', 'places', 'to', 'eat', 'in', 'a', 'train', 'station.']
 PRED 351: There are waiting rooms and places to eat in a train station.
 PRED SCORE: -0.1029
+GOLD 351: There are waiting rooms and places to eat in a train station.
+GOLD SCORE: -344.1888
 
 SENT 352: ['Passengers', 'or', 'cargo', 'enter', 'trains', 'from', 'a', 'train', 'station', 'platform', 'next', 'to', 'the', 'line.']
 PRED 352: Passengers or abandoned east Belfast from a train flight offer decided to the line.
 PRED SCORE: -8.6867
+GOLD 352: Passengers or cargo enter trains from a train station platform next to the line.
+GOLD SCORE: -326.2830
 
 SENT 353: ['A', 'tropical', 'cyclone', 'is', 'a', 'storm', 'formed', 'over', 'warm', 'tropical', 'sea.']
 PRED 353: A tropical thunderstorm is a storm formed over warm ski sea.
 PRED SCORE: -9.0957
+GOLD 353: A tropical cyclone is a storm formed over warm tropical sea.
+GOLD SCORE: -278.0376
 
 SENT 354: ['Cyclones', 'can', 'produce', 'very', 'powerful', 'winds', 'and', 'torrential', 'rain.']
 PRED 354: <unk> can produce very powerful winds and mortar rain.
 PRED SCORE: -3.0461
+GOLD 354: <unk> can produce very powerful winds and torrential rain.
+GOLD SCORE: -235.9557
 
 SENT 355: ['Tropical', 'cyclone', 'can', 'also', 'cause', 'high', 'waves', 'and', 'coastal', 'flooding.']
 PRED 355: Tropical transfers can also cause high waves and coastal flooding.
 PRED SCORE: -7.8792
+GOLD 355: Tropical cyclone can also cause high waves and coastal flooding.
+GOLD SCORE: -241.1213
 
 SENT 356: ['A', 'tropical', 'cyclone', 'can', 'move', 'inland', 'and', 'seriously', 'damage', 'property.']
 PRED 356: A tropical thunderstorm can likely produce and damage traffic property.
 PRED SCORE: -8.5453
+GOLD 356: A tropical cyclone can move inland and seriously damage property.
+GOLD SCORE: -280.9576
 
 SENT 357: ['The', 'violin', 'is', 'an', 'instrument', 'with', 'four', 'strings', 'that', 'is', 'played', 'with', 'a', 'bow.']
 PRED 357: The Trojans is an instrument with four pitches that is played with a <unk>
 PRED SCORE: -9.0365
+GOLD 357: The violin is an instrument with four strings that is played with a <unk>
+GOLD SCORE: -341.4209
 
 SENT 358: ['Violin', 'is', 'the', 'smallest', 'and', 'highest', 'pitched', 'instrument', 'in', 'its', 'family.']
 PRED 358: <unk> is the smallest and highest climb in beautiful, its family.
 PRED SCORE: -9.3755
+GOLD 358: <unk> is the smallest and highest pitched instrument in its family.
+GOLD SCORE: -259.1866
 
 SENT 359: ['A', 'violinist', 'holds', 'the', 'instrument', 'between', 'the', 'chin', 'and', 'the', 'collarbone.']
 PRED 359: A gentleman holds the logo between the shower and the <unk>
 PRED SCORE: -11.7824
+GOLD 359: A violinist holds the instrument between the chin and the <unk>
+GOLD SCORE: -282.3705
 
 SENT 360: ['Different', 'notes', 'are', 'made', 'by', 'fingering', 'the', 'violin', 'neck', 'with', 'one', 'hand', 'while', 'bowing.']
 PRED 360: Different notes are made by <unk> the dough filled with one hand while <unk>
 PRED SCORE: -8.4379
+GOLD 360: Different notes are made by <unk> the violin neck with one hand while <unk>
+GOLD SCORE: -357.9577
 
 SENT 361: ['Vultures', 'are', 'scavenging', 'birds,', 'feeding', 'mostly', 'on', 'the', 'carcasses', 'of', 'dead', 'animals.']
 PRED 361: <unk> are <unk> magical skin, mostly on the shores of dead animals.
-PRED SCORE: -9.1309
+PRED SCORE: -9.1310
+GOLD 361: <unk> are <unk> birds, feeding mostly on the carcasses of dead animals.
+GOLD SCORE: -316.9876
 
 SENT 362: ['Many', 'vultures', 'have', 'a', 'bald', 'head', 'without', 'feathers', 'for', 'losing', 'heat.']
 PRED 362: Many <unk> have a chilling head without applying for losing heat.
 PRED SCORE: -9.0768
+GOLD 362: Many <unk> have a bald head without feathers for losing heat.
+GOLD SCORE: -307.1488
 
 SENT 363: ['Vultures', 'use', 'their', 'large', 'wings', 'to', 'soar', 'for', 'miles', 'without', 'flapping.']
 PRED 363: <unk> use their large wings to sink for miles without <unk>
 PRED SCORE: -5.5535
+GOLD 363: <unk> use their large wings to soar for miles without <unk>
+GOLD SCORE: -325.8963
 
 SENT 364: ['Vultures', 'seldom', 'attack', 'healthy', 'animals,', 'but', 'may', 'kill', 'the', 'wounded', 'or', 'sick.']
 PRED 364: <unk> similarities attack healthy males but may kill the wounded or sick.
 PRED SCORE: -9.8240
+GOLD 364: <unk> seldom attack healthy animals, but may kill the wounded or sick.
+GOLD SCORE: -278.4317
 
 SENT 365: ['A', 'wall', 'is', 'a', 'solid', 'structure', 'that', 'defines', 'and', 'sometimes', 'protects', 'an', 'area.']
 PRED 365: A wall is a solid structure that protects and sometimes protects an area.
 PRED SCORE: -6.7579
+GOLD 365: A wall is a solid structure that defines and sometimes protects an area.
+GOLD SCORE: -359.9729
 
 SENT 366: ['Walls', 'delineate', 'a', 'building,', 'support', 'the', 'roof,', 'and', 'divide', 'the', 'space', 'into', 'rooms.']
 PRED 366: THEY <unk> a patrol support the chamber and amongst the space into rooms.
 PRED SCORE: -13.2994
+GOLD 366: Walls <unk> a building, support the roof, and divide the space into rooms.
+GOLD SCORE: -355.1973
 
 SENT 367: ['Walls', 'are', 'usually', 'made', 'of', 'stone,', 'brick,', 'or', 'cement,', 'as', 'well', 'as', 'drywall.']
 PRED 367: THEY are usually made of winning, <unk> or <unk> as well as <unk>
 PRED SCORE: -9.5091
+GOLD 367: Walls are usually made of stone, <unk> or <unk> as well as <unk>
+GOLD SCORE: -359.4438
 
 SENT 368: ['Retaining', 'walls', 'provide', 'a', 'barrier', 'to', 'movement', 'of', 'earth,', 'stone', 'or', 'water.']
 PRED 368: <unk> walls provide a barrier to movement of mud shoes or water.
 PRED SCORE: -8.0398
+GOLD 368: <unk> walls provide a barrier to movement of earth, stone or water.
+GOLD SCORE: -316.2941
 
 SENT 369: ['Water', 'is', 'the', 'most', 'common', 'liquid', 'on', 'Earth,', 'covering', '70%', 'of', 'its', 'area.']
 PRED 369: Water is the most common barrier on Earth, covering speeds of its area.
 PRED SCORE: -6.8955
+GOLD 369: Water is the most common liquid on Earth, covering 70% of its area.
+GOLD SCORE: -309.3851
 
 SENT 370: ['Plants,', 'animals', 'and', 'people', 'must', 'drink', 'water', 'in', 'order', 'to', 'live.']
 PRED 370: <unk> animals and people must drink water in order to live.
 PRED SCORE: -0.3021
+GOLD 370: <unk> animals and people must drink water in order to live.
+GOLD SCORE: -290.0323
 
 SENT 371: ['Water', 'freezes', 'at', 'a', 'low', 'temperature', 'and', 'becomes', 'solid', 'ice.']
 PRED 371: Water alerts at a low temperature and becomes solid ice.
 PRED SCORE: -5.3893
+GOLD 371: Water freezes at a low temperature and becomes solid ice.
+GOLD SCORE: -279.9678
 
 SENT 372: ['Rain', 'is', 'water', 'that', 'falls', 'from', 'clouds', 'in', 'the', 'sky,', 'which', 'are', 'condensed', 'vapor.']
 PRED 372: Rain is water that falls from freezing in the sun, which are downright <unk>
 PRED SCORE: -9.2939
+GOLD 372: Rain is water that falls from clouds in the sky, which are condensed <unk>
+GOLD SCORE: -395.1073
 
 SENT 373: ['A', 'whale', 'is', 'a', 'very', 'large', 'mammal', 'that', 'lives', 'in', 'the', 'ocean.']
 PRED 373: A whale is a very large ingredient that lives in the ocean.
 PRED SCORE: -4.9251
+GOLD 373: A whale is a very large mammal that lives in the ocean.
+GOLD SCORE: -348.4253
 
 SENT 374: ['Whales', 'breathe', 'through', 'blowholes', 'on', 'their', 'heads', 'when', 'surfacing.']
 PRED 374: <unk> carved through <unk> on their heads when <unk>
 PRED SCORE: -2.8928
+GOLD 374: <unk> breathe through <unk> on their heads when <unk>
+GOLD SCORE: -269.6533
 
 SENT 375: ['The', 'blubber', 'in', 'a', 'whale', 'serves', 'as', 'an', 'energy', 'reservoir', 'and', 'as', 'insulation.']
 PRED 375: The <unk> in a whale serves as an energy exporter and as <unk>
 PRED SCORE: -5.3456
+GOLD 375: The <unk> in a whale serves as an energy reservoir and as <unk>
+GOLD SCORE: -326.3270
 
 SENT 376: ['Whales', 'have', 'been', 'hunted', 'for', 'meat,', 'whale', 'oil', 'and', 'ambergris.']
 PRED 376: <unk> have been hunted for free, dancing oil and <unk>
 PRED SCORE: -8.8826
+GOLD 376: <unk> have been hunted for meat, whale oil and <unk>
+GOLD SCORE: -265.1678
 
 SENT 377: ['A', 'window', 'is', 'a', 'transparent', 'opening', 'in', 'a', 'wall', 'to', 'let', 'light', 'through.']
 PRED 377: A window is a transparent opening in a wall to let light through.
 PRED SCORE: -3.3548
+GOLD 377: A window is a transparent opening in a wall to let light through.
+GOLD SCORE: -352.9085
 
 SENT 378: ['A', 'typical', 'window', 'is', 'made', 'of', 'sheets', 'of', 'glass', 'held', 'in', 'place', 'by', 'frames.']
 PRED 378: A typical window is made of filling of glass held in place by <unk>
 PRED SCORE: -3.8931
+GOLD 378: A typical window is made of sheets of glass held in place by <unk>
+GOLD SCORE: -419.4605
 
 SENT 379: ['When', 'open,', 'a', 'window', 'will', 'also', 'let', 'air', 'and', 'sound', 'through.']
 PRED 379: When switch a window will also let air and sound through.
 PRED SCORE: -3.1178
+GOLD 379: When open, a window will also let air and sound through.
+GOLD SCORE: -304.7686
 
 SENT 380: ['Some', 'windows', 'have', 'multiple', 'panes', 'to', 'increase', 'insulation', 'inside.']
 PRED 380: Some windows have multiple <unk> to increase maternity inside.
 PRED SCORE: -5.4831
+GOLD 380: Some windows have multiple <unk> to increase insulation inside.
+GOLD SCORE: -293.7471
 
 SENT 381: ['A', 'woman', 'is', 'a', 'female', 'human', 'adult.']
 PRED 381: A woman is a female human parent.
 PRED SCORE: -1.2568
+GOLD 381: A woman is a female human adult.
+GOLD SCORE: -222.6436
 
 SENT 382: ['A', 'woman', 'is', 'stereotypically', 'seen', 'as', 'a', 'caregiver.']
 PRED 382: A woman is <unk> seen as a <unk>
 PRED SCORE: -0.0110
+GOLD 382: A woman is <unk> seen as a <unk>
+GOLD SCORE: -295.1508
 
 SENT 383: ['A', 'woman', 'can', 'become', 'pregnant', 'and', 'bear', 'children.']
 PRED 383: A woman can become pregnant and bear children.
 PRED SCORE: -0.6404
+GOLD 383: A woman can become pregnant and bear children.
+GOLD SCORE: -252.6590
 
 SENT 384: ['A', 'woman', 'has', 'different', 'reproductive', 'organs', 'than', 'a', 'man.']
 PRED 384: A woman has different diseases occurring than a man.
 PRED SCORE: -6.7615
+GOLD 384: A woman has different reproductive organs than a man.
+GOLD SCORE: -263.5038
 PRED AVG SCORE: -0.5578, PRED PPL: 1.7468
+GOLD AVG SCORE: -24.4689, GOLD PPL: 42336279097.0288
+
 ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-cc
 ERROR: deactivate-gcc_linux-64.sh failed, see above for details
 ERROR: This cross-compiler package contains no program /bin/x86_64-conda_cos6-linux-gnu-c++

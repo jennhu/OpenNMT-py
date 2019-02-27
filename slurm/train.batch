@@ -1,9 +1,9 @@
 #!/bin/sh
 #SBATCH --job-name=train
 #SBATCH --qos=cpl
-#SBATCH --time=7-0    # -- first number is days requested, second number is hours
-#SBATCH -o logs/train_news.out
-#SBATCH -e logs/train_news.err
+#SBATCH --time=3-0    # -- first number is days requested, second number is hours
+#SBATCH -o logs/train_news_tokenized.out
+#SBATCH -e logs/train_news_tokenized.err
 #SBATCH --gres=gpu:titan-x:2  #  -- request the number of gpus.
 #SBATCH -c 1                  #  -- request number of cores
 #SBATCH --mem=20000           #  -- request memory

@@ -1,4 +1,4 @@
 # run autoencoder on sample of news sentences from train set
 model: /om/user/jennhu/OpenNMT-py/models/news_step_100000.pt
-src: /om/user/jennhu/OpenNMT-py/data/news/news.2015.en.shuffled_rand1000.txt
-output: data/news/preds/pred-news.2015.en.shuffled_rand1000.txt
+src: /om/user/jennhu/OpenNMT-py/data/news/raw/news.2015.en.shuffled_rand1000.txt
+output: /om/user/jennhu/OpenNMT-py/data/preds/pred-news.2015.en.shuffled_rand1000.txt
