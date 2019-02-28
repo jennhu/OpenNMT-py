@@ -90,11 +90,14 @@ class Translator(object):
             fields,
             src_reader,
             tgt_reader,
-            # JH 2019-23-02 intervention flags
+            # JH 2019-28-02 intervention flags
+            save_activ,
+            activ_prefix,
+            activ_stats,
             flip_type,
             flip_target,
             flip_size,
-            # end JH 2019-23-02
+            # end JH 2019-28-02
             gpu=-1,
             n_best=1,
             min_length=0,
@@ -127,12 +130,6 @@ class Translator(object):
         self._tgt_bos_idx = self._tgt_vocab.stoi[tgt_field.init_token]
         self._tgt_unk_idx = self._tgt_vocab.stoi[tgt_field.unk_token]
         self._tgt_vocab_len = len(self._tgt_vocab)
-
-        # JH 2019-23-02 intervention flags
-        self.flip_type = flip_type
-        self.flip_target = flip_target
-        self.flip_size = flip_size
-        # end JH 2019-23-02
 
         self._gpu = gpu
         self._use_cuda = gpu > -1
@@ -189,6 +186,22 @@ class Translator(object):
                 "scores": [],
                 "log_probs": []}
 
+        # JH 2019-28-02 intervention flags
+        self.save_activ = save_activ
+        if self.save_activ:
+            self.activ_prefix = activ_prefix
+            self.activ = torch.Tensor()
+        self.flip_target = flip_target
+        if self.flip_target != 'none':
+            self.flip_type = flip_type
+            if flip_type == 'magnitude':
+                self.activ_stats = torch.load(activ_stats)
+            self.flip_size = flip_size
+            self._log('FLIP TYPE: %s' % self.flip_type)
+            self._log('FLIP TARGET: %s' % self.flip_target)
+            self._log('FLIP SIZE: %s' % self.flip_size)
+        # end JH 2019-28-02
+
         set_random_seed(seed, self._use_cuda)
 
     @classmethod
@@ -227,6 +240,9 @@ class Translator(object):
             src_reader,
             tgt_reader,
             # JH 2019-23-02 intervention flags
+            save_activ=opt.save_activ,
+            activ_prefix=opt.activ_prefix,
+            activ_stats=opt.activ_stats,
             flip_type=opt.flip_type,
             flip_target=opt.flip_target,
             flip_size=opt.flip_size,
@@ -384,6 +400,12 @@ class Translator(object):
                     os.write(1, output.encode('utf-8'))
 
         end_time = time.time()
+
+        if self.save_activ:
+            torch.save(self.activ, '%s.activ.pt' % self.activ_prefix)
+            self.activ_stats = self._get_activ_stats()
+            torch.save(self.activ_stats,
+                       '%s.activ.stats.pt' % self.activ_prefix)
 
         if self.report_score:
             msg = self._report_score('PRED', pred_score_total,
@@ -599,74 +621,93 @@ class Translator(object):
             # or [ tgt_len, batch_size, vocab ] when full sentence
         return log_probs, attn
 
-    def _flip(self, tensor, inds, flip_type):
+    def _update_activ(self, enc_states):
+        _, h_n = enc_states
+        # flatten h_n into 1 x h_n.numel() tensor
+        cur_activ = torch.reshape(h_n, (1, -1))
+        self.activ = torch.cat((self.activ, cur_activ))
+
+    def _get_activ_stats(self):
+        activ = self.activ
+        num_units = activ.size()[1]
+        # get min, max, and mean of each column (dim=0)
+        mins, maxes, means = activ.min(0)[0], activ.max(0)[0], activ.mean(0)
+        stats_dict = {
+            i : {'min': mins[i], 'max': maxes[i], 'mean': means[i]}
+            for i in range(num_units)
+        }
+        return stats_dict
+
+    def _flip(self, t, inds, flip_type):
         '''
-        Expects <tensor> to be 1D Tensor.
+        t : 1D Tensor
+        inds : 1D Tensor of indices to flip
+        flip_type : {sign, magnitude}
         '''
         if flip_type == 'sign':
-            flip_fn = lambda x : -x
+            flip_fn = lambda i : -t[i]
         else:
-            lower, upper = tensor.min(), tensor.max()
-            flip_fn = lambda x : self._flip_magnitude(x, lower, upper)
+            flip_fn = lambda i : self._flip_magnitude(t[i], i)
+        flip = torch.tensor([flip_fn(i) for i in inds])
+        flipped_t = t.scatter(0, inds, flip)
+        return flipped_t
 
-        flip = tensor[inds]
-        flip = flip.apply_(flip_fn)
-        flipped_tensor = tensor.scatter(0, inds, flip)
-        return flipped_tensor
-
-    def _flip_magnitude(self, x, lower, upper, epsilon=0.0001):
+    def _flip_magnitude(self, x, i):
         '''
-        Map values near 0 to values near lower or upper:
-        - If |x| < epsilon, then return a value chosen uniformly from either
-          (lower-epsilon, lower+epsilon) or (upper-epsilon, upper+epsilon).
-        Squash other values towards 0:
-        - If x is very high or very low, squash x near 0 (in magnitude).
-        - If x is far from both endpoints, then keep its magnitude.
+        * If x near the average value of the particular unit, then return
+          a value near the min or max value of that unit.
+        * If x near the unit's min or max value, then return a value near its
+          average value.
+        * Note that i is the index of the neuron w.r.t. the entire flattened
+          network, i.e. torch.reshape(h_n, (-1,)).
         '''
-        if abs(x) < epsilon:
-            # this will never happen if we only flip top units (high magnitude)
-            r = random.random()
-            center = upper if r > 0.5 else lower
-            return random.uniform(center - epsilon, center + epsilon)
+        # get activation stats for particular neuron
+        stats = self.activ_stats[i.item()]
+        mean_i = stats['mean']
+        r = random.random()
+        if r > 0.5:
+            max_i = stats['max']
+            return random.uniform(max_i - abs(x - mean_i), max_i)
         else:
-            min_dist = min(abs(upper - x), abs(lower - x))
-            r = random.random()
-            return min_dist if r > 0.5 else -min_dist
+            min_i = stats['min']
+            return random.uniform(min_i, min_i + abs(x - mean_i))
 
     def _flip_states(self, enc_states):
+        # TODO: handle batch_size != 1
+
+        # self._flip_states should never be called if self.flip_type == 'none'
+        # but worth checking for debugging
+        assert(self.flip_type != 'none')
+
         output, h_n = enc_states
-        # dim of h_n: [num_layers * num_directions, batch_size, hidden_size]
-        h_n_size = h_n.size()
+        # flatten h_n into 1D tensor
+        h_n_flat = torch.reshape(h_n, (-1,))
 
         # Option 1: get indices of top units in entire network
         if self.flip_target == 'network':
-            # flatten h_n into 1D tensor
-            h_n_flat = torch.reshape(h_n, (-1,))
             # get indices of top self.flip_size units (by magnitude)
-            _, inds = torch.topk(h_n_flat.abs(), self.flip_size)
-            # flip original values (not magnitudes)
-            flipped_h_n_flat = self._flip(h_n_flat, inds, self.flip_type)
-            # reshape to original dimensions of h_n
-            flipped_h_n = torch.reshape(flipped_h_n_flat, h_n_size)
+            _, topk_inds = torch.topk(h_n_flat.abs(), self.flip_size)
 
-        # Option 2: get indices of top units in layer with highest mean activation
+        # Option 2: get indices of top units in layer with highest mean activ.
         elif self.flip_target == 'layer':
-            # get index of layer with highest mean activation
-            # NOTE: maybe better to look at mean of highest activations
-            means = torch.mean(h_n.abs(), dim=2)
-            layer_ind = torch.argmax(means)
-            # get layer and flatten into 1D tensor
-            layer = torch.reshape(h_n[layer_ind,:,:], (-1,))
-            # get indices of top self.flip_size units (by magnitude)
-            _, inds = torch.topk(layer.abs(), self.flip_size)
-            # flip top units in layer and update
-            flipped_layer = self._flip(layer, inds, self.flip_type)
-            flipped_h_n = h_n
-            flipped_h_n[layer_ind,:,:] = flipped_layer
+            # get layer with highest mean activation
+            layer_means = torch.mean(h_n.abs(), dim=2)
+            layer_ind = torch.argmax(layer_means)
+            layer = torch.narrow(h_n, 0, layer_ind, 1)
+            # get indices of top self.flip_size units (by magnitude) in layer
+            _, topk_inds = torch.topk(layer.abs(), self.flip_size)
+            # convert to global indices (to use self.activ_stats)
+            # dim of h_n: num_layers * num_directions, batch_size, hidden_size
+            _, _, num_hidden_units = h_n.size()
+            topk_inds.apply_(
+                lambda i : i + (num_hidden_units * layer_ind)
+            )
+            topk_inds = torch.reshape(topk_inds, (-1,))
 
-        # Option 3: leave states untouched
-        else:
-            flipped_h_n = h_n
+        # flip original values at indices specified by global_topk_inds
+        flipped_h_n = self._flip(h_n_flat, topk_inds, self.flip_type)
+        # reshape to original dimensions of h_n
+        flipped_h_n = torch.reshape(flipped_h_n, h_n.size())
 
         return output, flipped_h_n
 
@@ -688,8 +729,14 @@ class Translator(object):
 
         # (1) Run the encoder on the src.
         src, enc_states, memory_bank, src_lengths = self._run_encoder(batch)
-        # NOTE: is it okay to overwrite enc_states, or should I mske a copy?
-        enc_states = self._flip_states(enc_states)
+
+        if self.save_activ:
+            self._update_activ(enc_states)
+
+        # NOTE: is it okay to overwrite enc_states, or should I make a copy?
+        if self.flip_target != 'none':
+            enc_states = self._flip_states(enc_states)
+
         self.model.decoder.init_state(src, memory_bank, enc_states)
 
         results = {

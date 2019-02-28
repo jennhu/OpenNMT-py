@@ -536,10 +536,21 @@ def translate_opts(parser):
                    "the log probabilities will be averaged directly. "
                    "Necessary for models whose output layers can assign "
                    "zero probability.")
+
+    group = parser.add_argument_group('Activations')
+    group.add('--save_activ', '-save_activ', action='store_true',
+              help="If this is set, then save activations of every neuron "
+                   "over the specified set of sentences. Also saves the "
+                   "max, min, and mean activations over the dataset.")
+    group.add('--activ_prefix', '-activ_prefix', type=str,
+              help="Prefix to .activ.pt and .activ.stats.pt files "
+                   "containing data about activations.")
+    group.add('--activ_stats', '-activ_stats', type=str,
+              help="Path to activation stats file to use for flipping")
+
+    group = parser.add_argument_group('Flipping')
     group.add('--flip_type', '-flip_type', choices=['sign', 'magnitude'],
-            help="Flip signs of activations, or change strong "
-                "activations to zeros and change zero activations "
-                "to +1/-1 at random.")
+            help="Flip signs or magnitudes of activations.")
     group.add('--flip_target', '-flip_target', default='none',
                choices=['none', 'layer', 'network'],
                help="If layer, then perform flip_type intervention on "
