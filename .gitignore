@@ -7,6 +7,7 @@ multi-bleu.perl
 *.sublime-*
 *DS_Store
 data/
+freqs.json
 
 # VScode settings
 .vscode/
