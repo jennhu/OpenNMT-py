@@ -33,19 +33,12 @@ def count_k_freq(ref_vocab, comp_vocab, k):
     '''
     freqs = _get_freq_counter(ref_vocab)
     comp_words = _get_word_list(comp_vocab)
-    words = []
-    for w in comp_words:
-        if w in ['<unk>', '<blank>']:
-            continue
-        else:
-            try:
-                if freqs[w] == k:
-                    words.append(w)
-            except KeyError:
-                # this shouldn't happen if we use combined vocab
-                if k == 0:
-                    words.append(w)
-                continue
+    comp_words = [w for w in comp_words if w not in ['<unk>', '<blank>']]
+
+    if k == 0:
+        words = [w for w in comp_words if w not in freqs]
+    else:
+        words = [w for w in comp_words if freqs[w] == k]
     return words
 
 def oov(ref_words, comp_words):
@@ -62,7 +55,6 @@ def combine_vocab(ref_vocab, comp_vocab):
     ref_words = _get_word_list(ref_vocab)
     comp_words = _get_word_list(comp_vocab)
     combined = list(set(ref_words + comp_words))
-    assert(oov(combined, comp_words) == 0)
     return combined
 
 def main(args):
