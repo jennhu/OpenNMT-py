@@ -7,7 +7,9 @@ multi-bleu.perl
 *.sublime-*
 *DS_Store
 data/
-freqs.json
+
+# slurm scripts
+slurm/
 
 # VScode settings
 .vscode/

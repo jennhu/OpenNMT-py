@@ -1,0 +1,12 @@
+# run autoencoder on sentences and save activations and stats
+model: /om/user/jennhu/OpenNMT-py/models/combined.clean2_step_100000.pt
+src: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.clean
+tgt: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.clean
+output: data/preds/pred_iarpa_clean2.txt
+
+# set to 1 to get sentence-level activations
+batch_size: 1
+
+# save activations and set prefix for output files
+save_activ: 'true'
+activ_prefix: 'data/iarpa/iarpa.clean.test'

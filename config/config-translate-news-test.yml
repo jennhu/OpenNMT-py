@@ -1,3 +1,5 @@
+# NOTE: the test sentences have not been tokenized yet
+
 # run autoencoder on held-out news sentences
 model: /om/user/jennhu/OpenNMT-py/models/news_step_100000.pt
 src: /om/user/jennhu/OpenNMT-py/data/news/raw/newstest2011.en

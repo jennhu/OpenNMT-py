@@ -1,0 +1,14 @@
+# Data: http://www.statmt.org/wmt16/translation-task.html
+# Train: English News Crawl articles from 2015
+# Valid: English development set (newstest2013.en)
+
+train_src: data/news/news.2015.en.shuffled.tokenized
+train_tgt: data/news/news.2015.en.shuffled.tokenized
+
+valid_src: data/news/newstest2013.en.tokenized
+valid_tgt: data/news/newstest2013.en.tokenized
+
+src_vocab: data/news/combined_clean_vocab.txt
+tgt_vocab: data/news/combined_clean_vocab.txt
+
+save_data: data/news/combined.clean

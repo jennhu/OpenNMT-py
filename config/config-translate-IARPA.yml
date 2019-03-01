@@ -1,8 +1,18 @@
 # run autoencoder on IARPA sentences
-model: /om/user/jennhu/OpenNMT-py/models/news_step_100000.pt
-# src: /om/user/jennhu/anti-sentences/annotation/features/keys/key_384sentences_dereferencedpronouns.txt
-src: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.tokenized
-tgt: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.tokenized
-output: data/preds/pred_iarpa_tokenized.txt
+model: /om/user/jennhu/OpenNMT-py/models/combined.clean2_step_100000.pt
+src: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.clean
+tgt: /om/user/jennhu/OpenNMT-py/data/iarpa/iarpa.clean
+output: data/preds/pred_iarpa_clean2.txt
 
+# set to 1 to get sentence-level activations (for flipping)
+# batch_size: 1
+
+# set path to activation stats file
+# activ_stats: 'data/iarpa/iarpa.clean.test.activ.stats.pt'
+
+# flip_target: 'network'
+# flip_type: 'sign'
+# flip_size: 50
+
+# NOTE: built in BLEU reporting is broken; run tools/multi_bleu.perl manually
 report_bleu: 'true'

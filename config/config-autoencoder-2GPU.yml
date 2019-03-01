@@ -1,6 +1,6 @@
 # train EN-EN translation network
-data: data/news/news
-save_model: models/news
+data: data/news/combined.clean
+save_model: models/combined.clean2
 global_attention: none
 
 world_size: 2

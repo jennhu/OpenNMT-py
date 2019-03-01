@@ -90,14 +90,12 @@ class Translator(object):
             fields,
             src_reader,
             tgt_reader,
-            # JH 2019-28-02 intervention flags
             save_activ,
             activ_prefix,
             activ_stats,
             flip_type,
             flip_target,
             flip_size,
-            # end JH 2019-28-02
             gpu=-1,
             n_best=1,
             min_length=0,
@@ -186,7 +184,7 @@ class Translator(object):
                 "scores": [],
                 "log_probs": []}
 
-        # JH 2019-28-02 intervention flags
+        # for saving activations and flipping
         self.save_activ = save_activ
         if self.save_activ:
             self.activ_prefix = activ_prefix
@@ -197,10 +195,10 @@ class Translator(object):
             if flip_type == 'magnitude':
                 self.activ_stats = torch.load(activ_stats)
             self.flip_size = flip_size
+            # for debugging
             self._log('FLIP TYPE: %s' % self.flip_type)
             self._log('FLIP TARGET: %s' % self.flip_target)
             self._log('FLIP SIZE: %s' % self.flip_size)
-        # end JH 2019-28-02
 
         set_random_seed(seed, self._use_cuda)
 
@@ -239,14 +237,12 @@ class Translator(object):
             fields,
             src_reader,
             tgt_reader,
-            # JH 2019-23-02 intervention flags
             save_activ=opt.save_activ,
             activ_prefix=opt.activ_prefix,
             activ_stats=opt.activ_stats,
             flip_type=opt.flip_type,
             flip_target=opt.flip_target,
             flip_size=opt.flip_size,
-            # end JH 2019-23-02
             gpu=opt.gpu,
             n_best=opt.n_best,
             min_length=opt.min_length,
@@ -402,6 +398,8 @@ class Translator(object):
         end_time = time.time()
 
         if self.save_activ:
+            # TODO: handle batch_size != 1. should also catch this earlier
+            assert(batch_size == 1)
             torch.save(self.activ, '%s.activ.pt' % self.activ_prefix)
             self.activ_stats = self._get_activ_stats()
             torch.save(self.activ_stats,
@@ -622,12 +620,22 @@ class Translator(object):
         return log_probs, attn
 
     def _update_activ(self, enc_states):
+        '''
+        Updates stored activations for each sentence encountered so far.
+        TODO: make this more efficient instead of appending activations for
+        one sentence at a time
+        '''
         _, h_n = enc_states
-        # flatten h_n into 1 x h_n.numel() tensor
         cur_activ = torch.reshape(h_n, (1, -1))
         self.activ = torch.cat((self.activ, cur_activ))
 
     def _get_activ_stats(self):
+        '''
+        Returns nested dictionary, where each key is the index of a unit
+        corresponding to its location in the flattened state Tensor.
+        The key is associated with a dictionary giving the min, max, and mean
+        activations of that unit according to self.activ.
+        '''
         activ = self.activ
         num_units = activ.size()[1]
         # get min, max, and mean of each column (dim=0)
@@ -640,9 +648,9 @@ class Translator(object):
 
     def _flip(self, t, inds, flip_type):
         '''
-        t : 1D Tensor
-        inds : 1D Tensor of indices to flip
-        flip_type : {sign, magnitude}
+        Returns Tensor with same shape as t, where the units of t at indices
+        inds are flipped according to flip_type. Expects t and inds
+        to be 1D tensors.
         '''
         if flip_type == 'sign':
             flip_fn = lambda i : -t[i]
@@ -654,14 +662,15 @@ class Translator(object):
 
     def _flip_magnitude(self, x, i):
         '''
-        * If x near the average value of the particular unit, then return
-          a value near the min or max value of that unit.
-        * If x near the unit's min or max value, then return a value near its
-          average value.
-        * Note that i is the index of the neuron w.r.t. the entire flattened
-          network, i.e. torch.reshape(h_n, (-1,)).
+        If x near the average value of the particular unit, then return
+        a value near the min or max value of that unit.
+        If x near the unit's min or max value, then return a value near its
+        mean value.
+        Note that i is the index of the neuron w.r.t. the entire flattened
+        network, i.e. torch.reshape(h_n, (-1,)).
         '''
-        # get activation stats for particular neuron
+        # get activation stats for particular unit
+        # (this is pre-loaded at the beginning of translation)
         stats = self.activ_stats[i.item()]
         mean_i = stats['mean']
         r = random.random()
@@ -673,14 +682,11 @@ class Translator(object):
             return random.uniform(min_i, min_i + abs(x - mean_i))
 
     def _flip_states(self, enc_states):
-        # TODO: handle batch_size != 1
-
-        # self._flip_states should never be called if self.flip_type == 'none'
+        # self._flip_states should never be called if self.flip_type == 'none',
         # but worth checking for debugging
         assert(self.flip_type != 'none')
 
         output, h_n = enc_states
-        # flatten h_n into 1D tensor
         h_n_flat = torch.reshape(h_n, (-1,))
 
         # Option 1: get indices of top units in entire network
@@ -694,17 +700,17 @@ class Translator(object):
             layer_means = torch.mean(h_n.abs(), dim=2)
             layer_ind = torch.argmax(layer_means)
             layer = torch.narrow(h_n, 0, layer_ind, 1)
+
             # get indices of top self.flip_size units (by magnitude) in layer
             _, topk_inds = torch.topk(layer.abs(), self.flip_size)
+
             # convert to global indices (to use self.activ_stats)
             # dim of h_n: num_layers * num_directions, batch_size, hidden_size
             _, _, num_hidden_units = h_n.size()
-            topk_inds.apply_(
-                lambda i : i + (num_hidden_units * layer_ind)
-            )
+            topk_inds.apply_(lambda i : i + (num_hidden_units * layer_ind))
             topk_inds = torch.reshape(topk_inds, (-1,))
 
-        # flip original values at indices specified by global_topk_inds
+        # flip original h_n values at indices specified by topk_inds
         flipped_h_n = self._flip(h_n_flat, topk_inds, self.flip_type)
         # reshape to original dimensions of h_n
         flipped_h_n = torch.reshape(flipped_h_n, h_n.size())
@@ -733,7 +739,7 @@ class Translator(object):
         if self.save_activ:
             self._update_activ(enc_states)
 
-        # NOTE: is it okay to overwrite enc_states, or should I make a copy?
+        # NOTE: is it okay to overwrite enc_states?
         if self.flip_target != 'none':
             enc_states = self._flip_states(enc_states)
 
